@@ -1,0 +1,87 @@
+title: Project
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: main_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Main image'
+          -
+            handle: summary
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Summary
+          -
+            handle: role
+            field:
+              type: text
+              display: Role
+          -
+            handle: team
+            field:
+              type: text
+              display: Team
+          -
+            handle: intro_images
+            field:
+              container: assets
+              type: assets
+              display: 'Intro images'
+          -
+            handle: content_area
+            field:
+              type: replicator
+              display: 'Content area'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    text:
+                      display: Text
+                      fields:
+                        -
+                          handle: text
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Text
+                    images:
+                      display: Images
+                      fields:
+                        -
+                          handle: images
+                          field:
+                            container: assets
+                            type: assets
+                            display: Images
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

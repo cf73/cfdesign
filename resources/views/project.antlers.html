@@ -1,0 +1,23 @@
+<div class="container mx-auto px-8 mt-[92px]">
+    <!-- <h1>{{title}}</h1> -->
+    <div class="flex flex-row space-x-[36px] mb-[112px]">
+        <div class="w-[38%]">{{summary}}</div>
+        <div class="w-[62%] grid grid-cols-2 gap-[24px]">
+            <div class="leading-[21px] flex flex-col space-y-[3px]">
+                <div><span class="meta text-warmred">role:</span> {{role}}</div>
+                <div><span class="meta text-warmred">team:</span> {{team}}</div>
+            </div>
+            <div class="inline-block">
+                {{tags}}
+                    <span class="bg-brown px-[15px] py-[6px] rounded-[6px] meta mr-[3px] mb-[9px] leading-[33px]">{{title}}</span>
+                {{/tags}}
+            </div>
+        </div>
+    </div>
+    {{intro_images}}
+        <img src="/assets/{{title}}" width="75%" height="auto" alt="">
+    {{/intro_images}}
+</div>
+
+
+{{partial:footer}}

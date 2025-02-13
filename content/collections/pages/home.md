@@ -1,8 +1,62 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+intro_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'I’m a Product and UX/UI designer with 15+ years’ experience driving impactful results for '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: EdTech
+      -
+        type: text
+        text: ', '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: FinTech
+      -
+        type: text
+        text: ', '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Healthcare
+      -
+        type: text
+        text: ', '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: B2B
+      -
+        type: text
+        text: ', and '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'arts & cultural'
+      -
+        type: text
+        text: ' clients.'
+updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
+updated_at: 1739390070
 ---
 ## Welcome to your brand new Statamic site!
 

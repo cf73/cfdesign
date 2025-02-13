@@ -2,4 +2,38 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* This is all you. */
+@font-face {
+    font-family: 'Avenir';
+    src: url('/public/fonts/AvenirNextRoundedPro-Reg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirBold';
+    src: url('/public/fonts/AvenirNextRoundedPro-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('/public/fonts/AvenirNextRoundedPro-Med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@layer base {
+    h1 {
+        @apply text-4xl xl:text-5xl;
+    }
+    strong {
+        font-family: 'AvenirBold';
+    }
+    .meta {
+        @apply uppercase text-[12px] leading-[12px] tracking-[12%]; font-family: 'AvenirBold';
+    }
+}
+
+@layer components {
+    
+}
