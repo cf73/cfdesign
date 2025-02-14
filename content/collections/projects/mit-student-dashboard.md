@@ -5,14 +5,23 @@ title: 'MIT Student Dashboard'
 main_image: mit0.png
 coming_soon: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739550782
+updated_at: 1739560028
 summary:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'For MIT, I designed and helped develop the Student Dashboard, using a Lean UX process of rapid iteration and feedback from students.'
+        text: 'For '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: MIT
+      -
+        type: text
+        text: ', I designed and helped develop the Student Dashboard, using a Lean UX process of rapid iteration and feedback from students.'
 role: 'Design Lead'
 team: 'MIT (in house)'
 tags:

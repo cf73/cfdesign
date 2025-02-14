@@ -9,8 +9,17 @@ summary:
     content:
       -
         type: text
-        text: 'Rapid comps for ROCNATION, done on a 24hr turnaround to use in a pitch for a client.'
+        text: 'Rapid comps for '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: ROCNATION
+      -
+        type: text
+        text: ', done on a 24hr turnaround to use in a pitch for a client. The app was envisaged as a blend between Instagram and a fashion platform.'
 coming_soon: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739504716
+updated_at: 1739559907
 ---

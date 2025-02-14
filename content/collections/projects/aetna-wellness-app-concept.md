@@ -4,7 +4,7 @@ blueprint: project
 title: 'Aetna Wellness App Concept'
 coming_soon: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739550515
+updated_at: 1739560001
 main_image: aetna0.png
 summary:
   -
@@ -12,7 +12,25 @@ summary:
     content:
       -
         type: text
-        text: 'For Aetna, I designed an app extending an IDEO-led personal wellness initiative.'
+        text: 'For '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Aetna
+      -
+        type: text
+        text: ', I designed an app extending an '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: IDEO
+      -
+        type: text
+        text: '-led personal wellness initiative.'
 tags:
   - strategy
   - uxui
