@@ -13,6 +13,7 @@ export default {
             fontFamily: {
                 avenir: ['Avenir', 'sans-serif'],
                 avenirmed: ['AvenirMedium', 'sans-serif'],
+                avenirbold: ['AvenirBold', 'sans-serif'],
               },
             colors: {
                 'primary': '#FFE9EB',

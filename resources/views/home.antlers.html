@@ -1,4 +1,4 @@
-<div class="container mx-auto px-[112px] mt-[104px] flex flex-col space-y-[12px]">
+<div class="container mx-auto px-8 md:px-[112px] mt-[104px] flex flex-col space-y-[12px]">
     <div class="text-[16px] leading-none font-avenirmed">Hey there!</div>
     <div id="intro" class="text-[32px] text-secondary leading-[42px]">
         {{intro_text}}
@@ -6,13 +6,24 @@
 </div>
 
 <div id="projects" class="w-full mt-[36px] pt-[60px] pb-[120px] bg-warmgray">
-    <div class="container mx-auto px-8 grid grid-cols-2 gap-[60px]">
+    <div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-[60px]">
         {{collection:projects}}
             <div class="flex flex-col space-y-[9px]">
-                <a href="{{url}}"><img src="{{main_image}}" alt=""></a>
-                <div class="px-[50px] text-[16px] leading-[21px]">
-                    {{summary}}
-                </div>
+                {{if coming_soon}}
+                    <img src="{{main_image}}" alt="">
+                    <div class="md:px-[50px] text-[16px] leading-[21px] space-y-[9px]">
+                        {{summary}}
+                        <div class="meta text-warmred">Case study coming soon</div>
+                    </div>
+                    {{else}}
+                    <a href="{{url}}"><img src="{{main_image}}" alt=""></a>
+                    <div class="md:px-[50px] text-[16px] leading-[21px] space-y-[3px]">
+                        {{summary}}
+                        <a href="{{url}}"><span class="flex flex-row meta items-center text-warmred">
+                            View Project
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M5 12l14 0"></path> <path d="M15 16l4 -4"></path> <path d="M15 8l4 4"></path></svg></span></a>
+                    </div>
+                {{/if}}
             </div>
         {{/collection:projects}}
     </div>

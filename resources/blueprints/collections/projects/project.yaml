@@ -42,6 +42,11 @@ tabs:
               type: assets
               display: 'Intro images'
           -
+            handle: movie
+            field:
+              type: video
+              display: Movie
+          -
             handle: content_area
             field:
               type: replicator
@@ -59,15 +64,16 @@ tabs:
                             remove_empty_nodes: false
                             type: bard
                             display: Text
-                    images:
-                      display: Images
+                    image:
+                      display: Image
                       fields:
                         -
-                          handle: images
+                          handle: image
                           field:
                             container: assets
                             type: assets
-                            display: Images
+                            display: Image
+                            max_files: 1
           -
             handle: template
             field:
@@ -85,3 +91,25 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - projects
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: coming_soon
+            field:
+              type: toggle
+              display: 'Coming Soon'
+          -
+            handle: tags
+            field:
+              type: terms
+              taxonomies:
+                - tags
+              display: tags
+              mode: select

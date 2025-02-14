@@ -1,20 +1,20 @@
 <div class="bg-warmgray w-full pb-[84px] mt-[96px]">
     <div class="container mx-auto px-8 pt-[84px] flex flex-col items-center">
         <div class="w-full flex flex-row justify-between items-center mb-[120px]">
-            <div class="w-1/3">
-                {{ collection:previous in="projects" as="posts" limit="1" }}
+            <div class="w-1/2 md:w-1/3">
+                {{ collection:previous in="projects" coming_soon:is="false" as="posts" limit="1" }}
                     {{ if no_results }}
                     {{ /if }}
              
                     {{ posts }}
                     <a href="{{url}}">
-                        <span class="flex flex-row text-warmred"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M5 12l14 0"></path> <path d="M5 12l4 4"></path> <path d="M5 12l4 -4"></path> </svg> Previous</span>
+                        <span class="flex flex-row font-avenirmed text-warmred"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M5 12l14 0"></path> <path d="M5 12l4 4"></path> <path d="M5 12l4 -4"></path> </svg> Previous</span>
                         <span>{{title}}</span>
                     </a>
                     {{ /posts }}
                  {{ /collection:previous }}
             </div>
-            <div class="w-1/3">
+            <div class="w-1/3 hidden md:block">
                 <a href="/" class="flex flex-col items-center">
                     <span class="flex flex-row text-warmred">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path> <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path> <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path> <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path> </svg>
@@ -22,22 +22,28 @@
                     <span>View all work</span>
                 </a>
             </div>
-            <div class="flex flex-col items-end w-1/3">
-                {{ collection:next in="projects" as="posts" limit="1" }}
+            <div class="flex flex-col items-end w-1/2 md:w-1/3">
+                {{ collection:next in="projects" coming_soon:is="false" as="posts" limit="1" }}
                     {{ if no_results }}
+                        <!-- Handle no results here -->
+                    {{ else }}
+                        {{ posts }}
+                        <a href="{{url}}">
+                            <span class="flex flex-row justify-end font-avenirmed text-warmred">
+                                Next
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> 
+                                    <path d="M5 12l14 0"></path> 
+                                    <path d="M15 16l4 -4"></path> 
+                                    <path d="M15 8l4 4"></path>
+                                </svg>
+                            </span>
+                            <span>{{title}}</span>
+                        </a>
+                        {{ /posts }}
                     {{ /if }}
-             
-                    {{ posts }}
-                    <a href="{{url}}">
-                        <span class="flex flex-row text-warmred">
-                            Next
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M5 12l14 0"></path> <path d="M15 16l4 -4"></path> <path d="M15 8l4 4"></path></svg></span>
-                        <span>{{title}}</span>
-                    </a>
-                    {{ /posts }}
-                 {{ /collection:next }}
-               
+                {{ /collection:next }}
             </div>
+            
         </div>
         {{partial:social}}
     </div>

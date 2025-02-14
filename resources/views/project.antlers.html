@@ -1,8 +1,8 @@
 <div class="container mx-auto px-8 mt-[92px]">
     <!-- <h1>{{title}}</h1> -->
-    <div class="flex flex-row space-x-[36px] mb-[112px]">
-        <div class="w-[38%]">{{summary}}</div>
-        <div class="w-[62%] grid grid-cols-2 gap-[24px]">
+    <div class="flex flex-col xl:flex-row space-y-[18px] xl:space-y-0 xl:space-x-[36px] mb-[42px]">
+        <div class="xl:w-[38%]">{{summary}}</div>
+        <div class="xl:w-[62%] grid grid-cols-1 md:grid-cols-2 gap-[24px]">
             <div class="leading-[21px] flex flex-col space-y-[3px]">
                 <div><span class="meta text-warmred">role:</span> {{role}}</div>
                 <div><span class="meta text-warmred">team:</span> {{team}}</div>
@@ -14,9 +14,26 @@
             </div>
         </div>
     </div>
+    {{if intro_images}}
     {{intro_images}}
-        <img src="/assets/{{title}}" width="75%" height="auto" alt="">
+    <div class="lg:w-[70vw] max-w-[100%] mx-auto mb-[18px] lg:mb-[66px] flex flex-col items-center"><img src="/assets/{{title}}" width="auto" height="auto" alt=""></div>
     {{/intro_images}}
+    {{/if}}
+    {{content_area}}
+        {{ if type == "text" }}
+            <div class="max-w-[600px] mx-auto mb-[48px] lg:mb-[90px]">
+                {{ text|markdown }}
+            </div>
+        {{ elseif type == "image" }}
+            <div class="lg:w-[70vw] mx-auto mb-[12px] flex flex-col items-center"><img src="/assets/{{image:title}}" width="auto" height="auto" alt=""></div>
+        {{ /if }}
+
+    {{/content_area}}
+    <!-- <div class="w-[70vw] mx-auto"><img class=" rounded-xl" src="/assets/{{intro_images:0:title}}" width="auto" height="auto" alt=""></div>
+    <div class="w-[70vw] mx-auto"><img class="rounded-xl" src="/assets/{{intro_images:1:title}}" width="auto" height="auto" alt=""></div> -->
+    <!-- <img data-speed="2" class="-mt-[900px] ml-[]" src="/assets/{{intro_images:1:title}}" width="100%" height="auto" alt="">
+    <img data-speed="3" class="-mt-[1100px] ml-[10vw]" src="/assets/{{intro_images:2:title}}" width="100%" height="auto" alt=""> -->
+
 </div>
 
 
