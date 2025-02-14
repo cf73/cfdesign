@@ -22,7 +22,7 @@ summary:
 role: 'Lead UX/UI and Product Designer'
 team: 'Intevity (agency)'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739501314
+updated_at: 1739550172
 tags:
   - b2b
   - ecommerce

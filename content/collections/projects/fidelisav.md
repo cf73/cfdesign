@@ -4,7 +4,7 @@ blueprint: project
 title: FidelisAV
 coming_soon: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739486689
+updated_at: 1739550680
 main_image: fidelis0.png
 summary:
   -

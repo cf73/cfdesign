@@ -20,6 +20,6 @@ summary:
         type: text
         text: ', I designed and built a website promoting their products and linking to their distributors.'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739485163
+updated_at: 1739550402
 coming_soon: true
 ---

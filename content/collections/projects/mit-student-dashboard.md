@@ -5,7 +5,7 @@ title: 'MIT Student Dashboard'
 main_image: mit0.png
 coming_soon: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739487679
+updated_at: 1739550782
 summary:
   -
     type: paragraph

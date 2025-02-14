@@ -36,16 +36,18 @@ tabs:
               type: text
               display: Team
           -
+            handle: movie
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Movie
+          -
             handle: intro_images
             field:
               container: assets
               type: assets
               display: 'Intro images'
-          -
-            handle: movie
-            field:
-              type: video
-              display: Movie
           -
             handle: content_area
             field:
