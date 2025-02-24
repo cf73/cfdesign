@@ -15,11 +15,11 @@
         </div>
     </div>
     {{if movie}}
-    <div class="lg:w-[70vw] max-w-[100%] rounded-xxl overflow-hidden mx-auto mb-[18px] lg:mb-[66px] flex flex-col items-center"><video src="{{movie}}" width="100%" autoplay loop></video></div>
+    <div class="lg:w-4/5 max-w-4/5 rounded-xxl overflow-hidden mx-auto mb-[18px] lg:mb-[66px] flex flex-col items-center"><video src="{{movie}}" width="100%" autoplay loop></video></div>
     {{/if}}
     {{if intro_images}}
     {{intro_images}}
-    <div class="lg:w-[70vw] max-w-[100%] mx-auto mb-[18px] lg:mb-[66px] flex flex-col items-center"><img src="/assets/{{title}}" width="auto" height="auto" alt=""></div>
+    <div class="lg:w-4/5 max-w-4/5 mx-auto mb-[18px] lg:mb-[66px] flex flex-col items-center"><img src="/assets/{{title}}" width="auto" height="auto" alt=""></div>
     {{/intro_images}}
     {{/if}}
     {{content_area}}
@@ -28,9 +28,25 @@
                 {{ text|markdown }}
             </div>
         {{ elseif type == "image" }}
-            <div class="lg:w-[70vw] mx-auto mb-[12px] flex flex-col items-center"><img src="/assets/{{image:title}}" width="auto" height="auto" alt=""></div>
+            <div class="lg:w-4/5 max-w-4/5 mx-auto mb-[12px] flex flex-col items-center"><img src="/assets/{{image:title}}" width="auto" height="auto" alt=""></div>
         {{ /if }}
-
+        <!-- {{if type == "before_and_after"}}
+        <div role="tablist" class="tabs tabs-bordered">
+            <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Before" />
+            <div role="tabpanel" class="tab-content p-10">Tab content 1</div>
+            
+            <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="After" checked="checked" />
+            <div role="tabpanel" class="tab-content p-10">Tab content 2</div>
+        </div>
+            <div class="grid grid-cols-2 gap-8">
+                {{images}}
+                    <div class="mb-[18px]"><img src="/assets/{{title}}" width="100%" height="auto" alt=""></div>
+                {{/images}}
+            </div>
+            <div class="max-w-[600px] mx-auto">
+                {{description}}
+            </div> -->
+        {{/if}}
     {{/content_area}}
     <!-- <div class="w-[70vw] mx-auto"><img class=" rounded-xl" src="/assets/{{intro_images:0:title}}" width="auto" height="auto" alt=""></div>
     <div class="w-[70vw] mx-auto"><img class="rounded-xl" src="/assets/{{intro_images:1:title}}" width="auto" height="auto" alt=""></div> -->

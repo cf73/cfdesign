@@ -20,7 +20,7 @@ summary:
         type: text
         text: ', I spearheaded an overhaul of this high-impact AI-based EdTech platform, helping level the playing field for historically underserved student populations at college.'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739502544
+updated_at: 1740408014
 coming_soon: false
 tags:
   - edtech

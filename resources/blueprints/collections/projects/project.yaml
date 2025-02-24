@@ -76,6 +76,22 @@ tabs:
                             type: assets
                             display: Image
                             max_files: 1
+                    before_and_after:
+                      display: 'Before and After'
+                      fields:
+                        -
+                          handle: images
+                          field:
+                            max_files: 2
+                            container: assets
+                            type: assets
+                            display: Images
+                        -
+                          handle: description
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Description
           -
             handle: template
             field:

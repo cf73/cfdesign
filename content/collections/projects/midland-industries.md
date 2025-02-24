@@ -22,7 +22,7 @@ summary:
 role: 'Lead UX/UI and Product Designer'
 team: 'Intevity (agency)'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739550172
+updated_at: 1739648033
 tags:
   - b2b
   - ecommerce
@@ -40,4 +40,40 @@ intro_images:
   - midland5.png
   - midland6.png
   - midland7.png
+content_area:
+  -
+    id: m76lf9jr
+    images:
+      - orders-before.png
+      - orders-after.png
+    description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: BEFORE
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'The left-rail grey box of links appears to belong to the Order History, whereas in fact it is a sub-navigation of My Account, with the first item active.'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: AFTER
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'The page is now relabeled ‘My Account’, which makes sense of the left-rail sub-navigation, which now shows the active item, ‘Orders’.'
+    type: before_and_after
+    enabled: true
 ---
