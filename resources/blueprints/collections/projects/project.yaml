@@ -80,18 +80,62 @@ tabs:
                       display: 'Before and After'
                       fields:
                         -
-                          handle: images
+                          handle: title
                           field:
-                            max_files: 2
-                            container: assets
-                            type: assets
-                            display: Images
+                            type: text
+                            display: Title
                         -
-                          handle: description
+                          handle: before
                           field:
-                            remove_empty_nodes: false
-                            type: bard
-                            display: Description
+                            type: replicator
+                            display: Before
+                            max_sets: 1
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  before:
+                                    display: Before
+                                    fields:
+                                      -
+                                        handle: before_image
+                                        field:
+                                          max_files: 1
+                                          container: assets
+                                          type: assets
+                                          display: 'Before Image'
+                                      -
+                                        handle: before_description
+                                        field:
+                                          remove_empty_nodes: false
+                                          type: bard
+                                          display: 'Before Description'
+                        -
+                          handle: after
+                          field:
+                            type: replicator
+                            display: After
+                            max_sets: 1
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  after:
+                                    display: After
+                                    fields:
+                                      -
+                                        handle: after_image
+                                        field:
+                                          max_files: 1
+                                          container: assets
+                                          type: assets
+                                          display: 'After Image'
+                                      -
+                                        handle: after_description
+                                        field:
+                                          remove_empty_nodes: false
+                                          type: bard
+                                          display: 'After Description'
           -
             handle: template
             field:
