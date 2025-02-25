@@ -4,7 +4,7 @@ blueprint: project
 title: 'Liberty Mutual'
 coming_soon: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740505220
+updated_at: 1740505939
 main_image: liberty0.png
 summary:
   -
@@ -109,6 +109,28 @@ content_area:
           -
             type: text
             text: "Various UX/UI best-practices are also on display here: good/better/best tiers to reduce choice paralysis; contextual tooltips to unfold educational content in a 'call and response' pattern; and, from a content-strategy perspective, a focus on the customer's needs rather than the supposed merits of the product."
+    type: text
+    enabled: true
+  -
+    id: m7ks59ll
+    image: libertymutual2.png
+    type: image
+    enabled: true
+  -
+    id: m7ks5ibi
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "A simple 'object-oriented' UI makes use of React's ability to create a more app-like experience on the web; instead of page reloads or long wizard flows, state changes are handeled via progressively-revealed UI, making interaction very intuitive."
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "While this may seem table-stakes 'good design', it contrasts with much of the rest of the industry, which remains mired in older tech stacks and UX approaches to such transactional interfaces."
     type: text
     enabled: true
 before_and_after: false
