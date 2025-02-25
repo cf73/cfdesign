@@ -22,7 +22,7 @@ summary:
 role: 'Lead UX/UI and Product Designer'
 team: 'Intevity (agency)'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740454124
+updated_at: 1740458330
 tags:
   - b2b
   - ecommerce
@@ -340,6 +340,68 @@ content_area:
                 text: "The redesigned cart is cleaner, more compact, and yet also more functional via some innovative UX. Certain items carry special bulk pricing for certain customers. These customers will automatically see the UI shown on the second line item, allowing them to specify the bulk unit. Selecting 'Item' seamlessly swaps the SKU for the non-discounted version, without the customer having to search for this smaller-quantity SKU manually."
         type: after
         enabled: true
+    type: before_and_after
+    enabled: true
+  -
+    id: m7jy8duz
+    title: Homepage
+    before:
+      -
+        id: m7jy8igh
+        before_image: midland-home-before.png
+        before_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Visually cluttered, dated, non-WCAG compliant, lacking a personalization layer, and lacking any way of promoting new products, the existing home page had room for improvement.'
+        type: before
+        enabled: true
+    after:
+      -
+        id: m7jy97es
+        after_image: midland-homepage-logged-in-after.png
+        after_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "Stopping short of a rebrand, the redesigned homepage established a new visual lanauge of directness and simplicity, while featuring personalized entrypoints for different use cases ('Order again', 'Pick up where you left off') and dedicated spaces to drive demand for new products."
+        type: after
+        enabled: true
+    type: before_and_after
+    enabled: true
+  -
+    id: m7jyn3d6
+    title: Industries
+    before:
+      -
+        id: m7jynfxx
+        type: before
+        enabled: true
+        before_image: midland-homepage2-before.png
+        before_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'The page ostensibly dedicated to the Waterworks industry nevertheless features the full static list of product categories down the left hand side of the page, while the main content of the page is overly-long textual copy and an awkward contact form. The Midland logo is also redundantly duplicated in the image.'
+    after:
+      -
+        id: m7jynlsz
+        after_image: midland-homepage2-after.png
+        type: after
+        enabled: true
+        after_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Taking visual cues from the logo shape, the industry images are presented alongside revised text copy in a simplfied selector UI which allows the user to filter product categories to those specific to this industry.'
     type: before_and_after
     enabled: true
 before_and_after: true
