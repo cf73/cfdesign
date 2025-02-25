@@ -175,3 +175,14 @@ tabs:
                 - tags
               display: tags
               mode: select
+          -
+            handle: before_and_after
+            field:
+              type: toggle
+              display: 'Before and After?'
+          -
+            handle: b_a_blurb
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'B+A blurb'

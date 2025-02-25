@@ -29,6 +29,9 @@
     h2 {
         @apply text-2xl xl:text-3xl;
     }
+    p {
+        @apply mb-[.5em];
+    }
     strong {
         font-family: 'AvenirBold';
     }

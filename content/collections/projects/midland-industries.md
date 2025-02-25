@@ -22,7 +22,7 @@ summary:
 role: 'Lead UX/UI and Product Designer'
 team: 'Intevity (agency)'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740446926
+updated_at: 1740452649
 tags:
   - b2b
   - ecommerce
@@ -88,6 +88,72 @@ content_area:
           -
             type: text
             text: ' experience was significantly overhauled.'
+    type: text
+    enabled: true
+  -
+    id: m7jtjzuv
+    image: midland5.png
+    type: image
+    enabled: true
+  -
+    id: m7jtke7t
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The redesigned '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: Order
+          -
+            type: text
+            text: ' page is much cleaner, affording users a streamlined experience when double checking Purchase Orders and making updates.'
+    type: text
+    enabled: true
+  -
+    id: m7jto6ou
+    image: midland6.png
+    type: image
+    enabled: true
+  -
+    id: m7jtodhu
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Items are listed in a compact yet scanable grid, with some powerful filtering options built into the UI, such as being able to group items by shipment.'
+    type: text
+    enabled: true
+  -
+    id: m7jviuvy
+    image: midland-cart-after.png
+    type: image
+    enabled: true
+  -
+    id: m7jvj62v
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A totally redesigned shopping cart experience brought clarity, density, and increased functionality to the previous design (see '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'deep dive'
+          -
+            type: text
+            text: ' section below).'
     type: text
     enabled: true
   -
@@ -245,4 +311,67 @@ content_area:
         enabled: true
     type: before_and_after
     enabled: false
+  -
+    id: m7jvf0km
+    title: 'Shopping Cart UX/UI'
+    before:
+      -
+        id: m7jvfasj
+        before_image: midland-cart-before.png
+        before_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'The cart design on the existing site was functional yet very messy table-based design, resulting in visual sprawl that made it difficult to determine cart contents for larger orders.'
+        type: before
+        enabled: true
+    after:
+      -
+        id: m7jvfva0
+        after_image: midland-cart-after.png
+        after_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "The redesigned cart is cleaner, more compact, and yet also more functional via some innovative UX. Certain items carry special bulk pricing for certain customers. These customers will automatically see the UI shown on the second line item, allowing them to specify the bulk unit. Selecting 'Item' seamlessly swaps the SKU for the non-discounted version, without the customer having to search for this smaller-quantity SKU manually."
+        type: after
+        enabled: true
+    type: before_and_after
+    enabled: true
+before_and_after: true
+b_a_blurb:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Midland had an existing website which my team was tasked to redesign, with the strategic goals of driving sales, increasing cart size, and encouraging existing customers to migrate to the new platform Midland had selected.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Below are some examples of areas of design focus, showcasing issues with the existing site and the solutions. Use the tabs to compare '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: before
+      -
+        type: text
+        text: ' and '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: after
+      -
+        type: text
+        text: .
 ---

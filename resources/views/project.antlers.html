@@ -31,50 +31,62 @@
         {{ elseif type == "image" }}
             <div class="lg:w-4/5 max-w-4/5 mx-auto mb-[12px] flex flex-col items-center"><img src="/assets/{{image:title}}" width="auto" height="auto" alt=""></div>
         {{ /if }}
-        {{if type == "before_and_after"}}
-            <div class="mt-[120px] w-full lg:w-3/5 mx-auto">
-                <div class="">
-                    <h2 class="text-warmred text-center mb-[18px]">{{title}}</h2>
-                    <nav class="-mb-0.5 flex justify-center gap-x-6" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
-                    <button type="button" class="hs-tab-active:font-avenirbold pointer-cursor hs-tab-active:text-white uppercase text-[16px] text-gray-500 hover:text-white focus:outline-none active" 
-                    id="horizontal-alignment-item-{{increment:a from='1'}}" 
-                    aria-selected="true" 
-                    data-hs-tab="#horizontal-alignment-{{increment:b from='1'}}" 
-                    aria-controls="horizontal-alignment-{{increment:c from='1'}}" role="tab">
-                        Before
-                    </button>
-                    <button type="button" class="hs-tab-active:font-avenirbold pointer-cursor hs-tab-active:text-white uppercase text-[16px] text-gray-500 hover:text-white focus:outline-none" id="horizontal-alignment-item-{{increment:f from='2'}}" 
-                    aria-selected="false" 
-                    data-hs-tab="#horizontal-alignment-{{increment:g from='200'}}" 
-                    aria-controls="horizontal-alignment-{{increment:h from='200'}}" role="tab">
-                        After
-                    </button>
-                    </nav>
-                </div>
-                
-                <div class="mt-3">
-                    <div id="horizontal-alignment-{{increment:d from='1'}}" class="space-y-4" role="tabpanel" 
-                         aria-labelledby="horizontal-alignment-item-{{increment:e from='1'}}">
-                        {{before}}
-                        <img src="{{before_image}}" width="100%" height="auto" alt="">
-                        <div class="w-full lg:w-2/3 mx-auto">
-                            {{before_description}}
-                        </div>
-                        {{/before}}
-                    </div>
-                    <div id="horizontal-alignment-{{increment:i from='200'}}" class="hidden space-y-4" role="tabpanel" 
-                         aria-labelledby="horizontal-alignment-item-{{increment:j from='200'}}">
-                        {{after}}
-                        <img src="{{after_image}}" width="100%" height="auto" alt="">
-                        <div class="w-full lg:w-2/3 mx-auto">
-                            {{after_description}}
-                        </div>
-                        {{/after}}
-                    </div>
-                </div>
-            </div>
-        {{/if}}
     {{/content_area}}
+</div>
+{{if before_and_after}}  
+<section class="bg-warmgray py-16 -mb-[94px]">
+    <div class="container px-8 mx-auto mb-16">
+        <h1 class="mb-6">Deep dive: before and after</h1>
+        <div class="max-w-[600px]">{{b_a_blurb}}</div>
+    </div>
+    <div class="container px-8 xl:w-3/5 mx-auto">
+        {{content_area}}
+        {{if type == "before_and_after"}}
+        <div class="">
+            <h2 class="text-warmred text-center mb-[18px]">{{title}}</h2>
+            <nav class="-mb-0.5 flex justify-center gap-x-6" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+            <button type="button" class="hs-tab-active:font-avenirbold pointer-cursor hs-tab-active:text-white uppercase text-[16px] text-gray-500 hover:text-white focus:outline-none active"
+            id="horizontal-alignment-item-{{increment:a from='1'}}"
+            aria-selected="true"
+            data-hs-tab="#horizontal-alignment-{{increment:b from='1'}}"
+            aria-controls="horizontal-alignment-{{increment:c from='1'}}" role="tab">
+                Before
+            </button>
+            <button type="button" class="hs-tab-active:font-avenirbold pointer-cursor hs-tab-active:text-white uppercase text-[16px] text-gray-500 hover:text-white focus:outline-none" id="horizontal-alignment-item-{{increment:f from='2'}}"
+            aria-selected="false"
+            data-hs-tab="#horizontal-alignment-{{increment:g from='200'}}"
+            aria-controls="horizontal-alignment-{{increment:h from='200'}}" role="tab">
+                After
+            </button>
+            </nav>
+        </div>
+    
+        <div class="mt-3 mb-[120px]">
+            <div id="horizontal-alignment-{{increment:d from='1'}}" class="space-y-4" role="tabpanel"
+                    aria-labelledby="horizontal-alignment-item-{{increment:e from='1'}}">
+                {{before}}
+                <img src="{{before_image}}" width="100%" height="auto" alt="">
+                <div class="w-full lg:w-2/3 mx-auto">
+                    {{before_description}}
+                </div>
+                {{/before}}
+            </div>
+            <div id="horizontal-alignment-{{increment:i from='200'}}" class="hidden space-y-4" role="tabpanel"
+                    aria-labelledby="horizontal-alignment-item-{{increment:j from='200'}}">
+                {{after}}
+                <img src="{{after_image}}" width="100%" height="auto" alt="">
+                <div class="w-full lg:w-2/3 mx-auto">
+                    {{after_description}}
+                </div>
+                {{/after}}
+            </div>
+        </div>
+        {{/if}}
+        {{/content_area}}
+    </div>
+</section>
+{{/if}}
+  
     <!-- <div class="w-[70vw] mx-auto"><img class=" rounded-xl" src="/assets/{{intro_images:0:title}}" width="auto" height="auto" alt=""></div>
     <div class="w-[70vw] mx-auto"><img class="rounded-xl" src="/assets/{{intro_images:1:title}}" width="auto" height="auto" alt=""></div> -->
     <!-- <img data-speed="2" class="-mt-[900px] ml-[]" src="/assets/{{intro_images:1:title}}" width="100%" height="auto" alt="">
