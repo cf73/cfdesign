@@ -4,8 +4,8 @@ blueprint: project
 title: 'Liberty Mutual'
 coming_soon: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740505939
-main_image: liberty0.png
+updated_at: 1740512851
+main_image: libertymutual3.png
 summary:
   -
     type: paragraph
@@ -34,8 +34,8 @@ tags:
   - fintech
 content_area:
   -
-    id: m7kqq34u
-    image: timeline.png
+    id: m7kweh90
+    image: libertymutual3.png
     type: image
     enabled: true
   -
@@ -60,6 +60,11 @@ content_area:
             type: text
             text: 'Using a Lean UX process, we rapidly dialed in a validated strategy which was effective differentiating Certainly in a crowded and commoditized market.'
     type: text
+    enabled: true
+  -
+    id: m7kqq34u
+    image: timeline.png
+    type: image
     enabled: true
   -
     id: m7kqzbzv
