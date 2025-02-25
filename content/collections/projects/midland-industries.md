@@ -22,7 +22,7 @@ summary:
 role: 'Lead UX/UI and Product Designer'
 team: 'Intevity (agency)'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740437114
+updated_at: 1740446926
 tags:
   - b2b
   - ecommerce
@@ -103,7 +103,7 @@ content_area:
             content:
               -
                 type: text
-                text: 'The page as a whole lacks clear visual hierarchy, making initial comprehension and navigability challenging. Everything sits on a glaring white background (1), while the navigational grey box (2) appears to be a child element of the page.'
+                text: "The existing 'My Account' experience lacked clear visual hierarchy, making initial comprehension and navigability challenging. Everything sat on a glaring white background (1), while the a confusing gray box of links (2) appeared to be a child element of the page (see 'Architectural Issues', below)."
         type: before
         enabled: true
     after:
@@ -132,7 +132,7 @@ content_area:
             content:
               -
                 type: text
-                text: 'The confusing left-rail box of links (1) appears to belong to the current ‘Order History’ page (2). In fact, it should be a sub-navigation of My Account, with the first item active.'
+                text: 'The confusing gray box of links (1) appears to belong to the current ‘Order History’ page (2). In fact, it should be a sub-navigation of My Account, with the first item active.'
         type: before
         enabled: true
         before_image: before-1.png
@@ -151,7 +151,38 @@ content_area:
         enabled: true
     type: before_and_after
     enabled: true
-    title: 'Hierarchy and architectural issues'
+    title: 'Architectural issues'
+  -
+    id: m7ji7kmv
+    title: 'Search and filter issues'
+    before:
+      -
+        id: m7ji8bcj
+        before_image: before-2.png
+        before_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Different filter states of ‘Orders’ are presented as separate pages: ‘Order History’, ‘Open Orders’, ‘Saved Orders’ (1). This makes it impossible to search or filter across all simultaneously (2).'
+        type: before
+        enabled: true
+    after:
+      -
+        id: m7ji8u5e
+        after_image: after-2.png
+        after_description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '‘Order History’, ‘Open Orders’ and ‘Saved Orders’ from the old subnav are combined into the new single ‘Orders’ tab (1) as faceted sub-navigation (2). This allows for additional nuance such as ‘Partially Fulfilled’ status to be surfaced quickly, while also making search and filter possible from a single location (3).'
+        type: after
+        enabled: true
+    type: before_and_after
+    enabled: true
   -
     id: m7jlzg06
     title: Scanability
@@ -179,37 +210,6 @@ content_area:
               -
                 type: text
                 text: 'In my redesign, the new sub-navigation (1) introduces visual segmentation and a slight reordering for easier comprehension and scannability.'
-        type: after
-        enabled: true
-    type: before_and_after
-    enabled: true
-  -
-    id: m7ji7kmv
-    title: 'Search + Filter issues'
-    before:
-      -
-        id: m7ji8bcj
-        before_image: before-2.png
-        before_description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Different filter states of ‘Orders’ are presented as separate pages: ‘Order History’, ‘Open Orders’, ‘Saved Orders’ (1). This makes it impossible to search or filter across all simultaneously (2).'
-        type: before
-        enabled: true
-    after:
-      -
-        id: m7ji8u5e
-        after_image: after-2.png
-        after_description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: '‘Order History’, ‘Open Orders’ and ‘Saved Orders’ from the old subnav are combined into the new single ‘Orders’ tab (1) as faceted sub-navigation (2). This allows for additional nuance such as ‘Partially Fulfilled’ status to be surfaced quickly, while also making search and filter possible from a single location (3).'
         type: after
         enabled: true
     type: before_and_after
@@ -244,5 +244,5 @@ content_area:
         type: after
         enabled: true
     type: before_and_after
-    enabled: true
+    enabled: false
 ---
