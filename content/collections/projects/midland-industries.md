@@ -22,7 +22,7 @@ summary:
 role: 'Lead UX/UI and Product Designer'
 team: 'Intevity (agency)'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740452649
+updated_at: 1740454124
 tags:
   - b2b
   - ecommerce
@@ -324,7 +324,7 @@ content_area:
             content:
               -
                 type: text
-                text: 'The cart design on the existing site was functional yet very messy table-based design, resulting in visual sprawl that made it difficult to determine cart contents for larger orders.'
+                text: 'The cart design on the existing site was a functional yet very messy table-based design, resulting in visual sprawl that made it difficult to determine cart contents for larger orders.'
         type: before
         enabled: true
     after:
