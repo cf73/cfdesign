@@ -4,7 +4,7 @@ blueprint: project
 title: 'Liberty Mutual'
 coming_soon: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740512851
+updated_at: 1740512996
 main_image: libertymutual3.png
 summary:
   -
@@ -52,7 +52,17 @@ content_area:
             text: Certainly
           -
             type: text
-            text: " was a startup within Liberty Mutual's innovation labs. I led a zero-to-launch conception and design of this net-new insurance offering, aimed at millennials, a typically under-insured group. "
+            text: " was a startup within Liberty Mutual's innovation labs. I led a zero-to-launch conception and design of this net-new insurance offering, aimed at millennials, a typically under-insured group."
+    type: text
+    enabled: true
+  -
+    id: m7kqq34u
+    image: timeline.png
+    type: image
+    enabled: true
+  -
+    id: m7kwhwc7
+    text:
       -
         type: paragraph
         content:
@@ -60,11 +70,6 @@ content_area:
             type: text
             text: 'Using a Lean UX process, we rapidly dialed in a validated strategy which was effective differentiating Certainly in a crowded and commoditized market.'
     type: text
-    enabled: true
-  -
-    id: m7kqq34u
-    image: timeline.png
-    type: image
     enabled: true
   -
     id: m7kqzbzv
