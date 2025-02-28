@@ -2,9 +2,9 @@
 id: f7841648-51d3-4eb7-bab9-852f76151701
 blueprint: project
 title: 'The Humanity Initiative'
-main_image: thi0.png
+main_image: thi5.png
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739503156
+updated_at: 1740765268
 summary:
   -
     type: paragraph
@@ -36,4 +36,5 @@ tags:
   - gsap
   - statamic
 coming_soon: true
+before_and_after: false
 ---
