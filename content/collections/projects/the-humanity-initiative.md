@@ -4,7 +4,7 @@ blueprint: project
 title: 'The Humanity Initiative'
 main_image: thi5.png
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1740848430
+updated_at: 1740848813
 summary:
   -
     type: paragraph
