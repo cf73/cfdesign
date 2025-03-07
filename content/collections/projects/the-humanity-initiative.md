@@ -2,9 +2,9 @@
 id: f7841648-51d3-4eb7-bab9-852f76151701
 blueprint: project
 title: 'The Humanity Initiative'
-main_image: thi12.png
+main_image: thi14.png
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1741323152
+updated_at: 1741330511
 summary:
   -
     type: paragraph
