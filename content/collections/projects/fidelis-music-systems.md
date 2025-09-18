@@ -6,14 +6,20 @@ main_image: fidelismusicsystems.png
 coming_soon: false
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1757628852
+updated_at: 1758129729
 summary:
   -
     type: paragraph
     content:
       -
         type: text
-        text: "A 100% 'vibe-coded' rebuild of a site I designed and built on Statamic six years previously, now reconceived as a React app. Enhanced sort and filter functionality, improved UX/UI, use of animation, and 100/100 SEO scores."
+        marks:
+          -
+            type: bold
+        text: Fidelis
+      -
+        type: text
+        text: " is America's #1 importer and distributor of high-end audio equipment. Using Claude-4-Sonnet AI in Cursor, I 'vibe-coded' a redesign and rebuild of their customer-facing site, reconceived as a responsive React app. Custom in-app CMS, enhanced sort and filter functionality, improved UX/UI, use of animation, and 100/100 SEO scores."
 role: 'Design and Build using AI'
 team: Freelance
 tags:
@@ -108,7 +114,7 @@ content_area:
         content:
           -
             type: text
-            text: "AI also presented unlocked abilities to experiment rapidly with different UX strategies, allowing for more complex design such as this elegant 'megamenu' that lets users quickly browse the main product categories."
+            text: "AI also unlocked abilities to experiment rapidly with different UX strategies, such as this elegant 'megamenu' that lets users quickly browse the main product categories."
       -
         type: paragraph
         content:
