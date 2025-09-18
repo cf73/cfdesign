@@ -2,11 +2,11 @@
 id: 1c78f539-7d49-4cda-a4fa-8ef6151c85c5
 blueprint: project
 title: 'Fidelis Music Systems'
-main_image: fidelismusicsystems.png
+main_image: fidelismusicsystemsdylan.png
 coming_soon: false
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1758129729
+updated_at: 1758202449
 summary:
   -
     type: paragraph
