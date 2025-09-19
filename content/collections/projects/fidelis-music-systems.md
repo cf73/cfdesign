@@ -6,7 +6,7 @@ main_image: fidelismusicsystemsdylan.png
 coming_soon: false
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1758295629
+updated_at: 1758295688
 summary:
   -
     type: paragraph
@@ -135,7 +135,7 @@ content_area:
         content:
           -
             type: text
-            text: "AI also unlocked abilities to experiment rapidly with different UX strategies, such as this elegant 'megamenu' that lets users quickly browse the main product categories."
+            text: "AI-assisted development unlocked rapid experimentation with different UX strategies, such as this elegant 'megamenu' that lets users quickly browse the main product categories."
       -
         type: paragraph
         content:
