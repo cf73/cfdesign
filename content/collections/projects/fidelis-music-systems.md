@@ -6,7 +6,7 @@ main_image: fidelismusicsystemsdylan.png
 coming_soon: false
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1758295326
+updated_at: 1758295629
 summary:
   -
     type: paragraph
@@ -110,6 +110,17 @@ content_area:
     id: mfqzmun1
     image: fidelismusicsystems8.png
     type: image
+    enabled: true
+  -
+    id: mfqzrlnz
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The site blends retail, pre-owned, and blog experiences, allowing Fidelis to curate a vibrant local community.'
+    type: text
     enabled: true
   -
     id: mffyo2rd
