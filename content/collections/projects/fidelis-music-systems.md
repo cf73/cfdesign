@@ -6,7 +6,7 @@ main_image: fidelismusicsystemsdylan.png
 coming_soon: false
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1758203597
+updated_at: 1758295218
 summary:
   -
     type: paragraph
@@ -100,6 +100,11 @@ content_area:
             type: text
             text: 'The rebuild was a fascinating experience, as I navigated the new lines between automation and control. Ultimately, I landed on working through a suite of expert agents, each with its own domain of expertise, working on design systems and mood boards with one agent, for example, while ensuring it could not break the functional data flows and logic being built by other agents.'
     type: text
+    enabled: true
+  -
+    id: mfqzkf9m
+    image: fidelismusicsystems7.png
+    type: image
     enabled: true
   -
     id: mffyo2rd
