@@ -11,18 +11,65 @@ export default {
 
     theme: {
         extend: {
-            fontFamily: {
-                avenir: ['Avenir', 'sans-serif'],
-                avenirmed: ['AvenirMedium', 'sans-serif'],
-                avenirbold: ['AvenirBold', 'sans-serif'],
-              },
+        fontFamily: {
+            'sans': ['Neue Haas Grotesk Text', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            'display': ['Neue Haas Grotesk Display', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        },
+            fontSize: {
+                'xs': ['0.75rem', { lineHeight: '1rem' }],
+                'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+                'base': ['1rem', { lineHeight: '1.5rem' }],
+                'lg': ['1.125rem', { lineHeight: '1.75rem' }],
+                'xl': ['1.25rem', { lineHeight: '1.75rem' }],
+                '2xl': ['1.5rem', { lineHeight: '2rem' }],
+                '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+                '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+                '5xl': ['3rem', { lineHeight: '1' }],
+                '6xl': ['3.75rem', { lineHeight: '1' }],
+            },
+            letterSpacing: {
+                'tighter': '-0.05em',
+                'tight': '-0.025em',
+                'normal': '0',
+                'wide': '0.025em',
+                'wider': '0.05em',
+                'widest': '0.1em',
+            },
+            lineHeight: {
+                'none': '1',
+                'tight': '1.25',
+                'snug': '1.375',
+                'normal': '1.5',
+                'relaxed': '1.625',
+                'loose': '2',
+            },
             colors: {
-                'primary': '#FFE9EB',
-                'secondary': '#FBDFE2',
-                'warmred': '#DE4353',
-                'warmblack': '#181B18',
-                'warmgray': '#2F302F',
-                'brown': '#4D4243',
+                // Retro-modern palette inspired by 1980s Macintosh
+                'primary': '#FFFFFF',
+                'accent': '#1a1a1a', // Near-black for key accents
+                'dark': '#1a1a1a', // Rich near-black for text
+                'dark-light': '#2d2d2d',
+                'gray': '#5a5a5a', // Warm mid-gray
+                'gray-light': '#8a8a8a',
+                'gray-dark': '#3a3a3a',
+                'border': '#b8b0ad', // Slightly darker than background
+                'background': '#d3ccc9', // Main warm beige
+                'surface': '#e8e3e0', // Lighter variant for cards/sections
+                'surface-dark': '#c4bdb9', // Darker variant for hero
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+                'gradient-warm': 'linear-gradient(135deg, #FFE9EB 0%, #FBDFE2 100%)',
+                'gradient-dark': 'linear-gradient(135deg, #181B18 0%, #2F302F 100%)',
+                'gradient-red': 'linear-gradient(135deg, #DE4353 0%, #F56573 100%)',
+                'gradient-subtle': 'linear-gradient(160deg, #ccc5c2 0%, #e0d9d6 50%, #ccc5c2 100%)',
+            },
+            boxShadow: {
+                'warm': '0 10px 25px -5px rgba(222, 67, 83, 0.1), 0 10px 10px -5px rgba(222, 67, 83, 0.04)',
+                'warm-lg': '0 20px 25px -5px rgba(222, 67, 83, 0.1), 0 10px 10px -5px rgba(222, 67, 83, 0.04)',
+                'glow': '0 0 20px rgba(222, 67, 83, 0.3)',
+                'glow-lg': '0 0 40px rgba(222, 67, 83, 0.4)',
             },
         },
     },

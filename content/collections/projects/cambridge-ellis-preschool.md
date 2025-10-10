@@ -1,10 +1,11 @@
 ---
 id: 825468c8-b4fd-4e84-b5dc-5b859788aa0b
+published: false
 blueprint: project
 title: 'Cambridge Ellis Preschool'
 coming_soon: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739550644
+updated_at: 1760064040
 main_image: ces0.png
 summary:
   -
@@ -28,4 +29,5 @@ tags:
   - identity
   - uxui
   - statamic
+before_and_after: false
 ---
