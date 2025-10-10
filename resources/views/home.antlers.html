@@ -20,9 +20,9 @@
             {{collection:projects}}
                 <div class="group">
                     {{if coming_soon}}
-                        <div class="relative mb-10 transition-transform duration-500 ease-out group-hover:scale-[1.02]">
-                            <img src="{{ glide:main_image width='2400' quality='80' format='webp' sharpen='15' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
-                        </div>
+                <div class="relative mb-10 transition-transform duration-500 ease-out group-hover:scale-[1.02]">
+                    <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
+                </div>
                         <div class="space-y-7">
                             <div class="flex items-center gap-4">
                                 <h3 class="text-dark" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
@@ -39,9 +39,9 @@
                         </div>
                         {{else}}
                         <div>
-                            <a href="{{url}}" class="block relative mb-10 transition-transform duration-500 ease-out group-hover:scale-[1.02] cursor-pointer">
-                                <img src="{{ glide:main_image width='2400' quality='80' format='webp' sharpen='15' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
-                            </a>
+                <a href="{{url}}" class="block relative mb-10 transition-transform duration-500 ease-out group-hover:scale-[1.02] cursor-pointer">
+                    <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
+                </a>
                             <div class="space-y-7">
                                 <h3 class="text-dark transition-colors duration-300 group-hover:text-gray" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
                                 <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.8; letter-spacing: 0.005em;">

@@ -98,9 +98,9 @@ return [
         */
 
         'presets' => [
-            'homepage' => ['w' => 2400, 'q' => 80, 'fm' => 'webp', 'sharp' => 15],
-            'project' => ['w' => 2800, 'q' => 80, 'fm' => 'webp', 'sharp' => 15],
-            'before_after' => ['w' => 1600, 'q' => 80, 'fm' => 'webp', 'sharp' => 15],
+            'homepage' => ['w' => 2400, 'q' => 90, 'fm' => 'webp', 'sharp' => 10],
+            'project' => ['w' => 2800, 'q' => 90, 'fm' => 'webp', 'sharp' => 10],
+            'before_after' => ['w' => 1600, 'q' => 90, 'fm' => 'webp', 'sharp' => 10],
         ],
 
         /*
