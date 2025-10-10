@@ -10,14 +10,13 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script> -->
     </head>
     <body class="bg-warmblack font-avenir leading-normal text-primary antialiased">
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-                {{ if template != "home" }}
-                    {{partial:header}}
-                {{ /if }}
-                {{ template_content }}
-            </div>
-        </div>
+        {{ if template != "home" }}
+            {{partial:header}}
+        {{ /if }}
+        
+        <main id="swup" class="transition-fade">
+            {{ template_content }}
+        </main>
         <!-- <script src="/js/ScrollSmoother.min.js"></script>
         <script src="/js/scrollEffects.js"></script>
         <script src="/js/gsap.js"></script> -->
@@ -38,7 +37,6 @@
         alt="Web Analytics"
         referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
-    <script src="/js/squircle.js"></script>
     <script src="/js/preline.js"></script>
     </body>
 </html>

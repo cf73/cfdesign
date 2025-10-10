@@ -1,29 +1,29 @@
 <div class="bg-background">
 <!-- Project Header -->
-<section class="py-16 md:py-24">
-    <div class="container mx-auto px-8 max-w-4xl">
-        <h1 class="font-display text-dark mb-12 text-center" style="font-size: 3.5rem; font-weight: 300; line-height: 1.1; letter-spacing: -0.025em;">
+<section class="py-20 md:py-32">
+    <div class="container mx-auto px-8 max-w-5xl">
+        <h1 class="font-display text-dark mb-12 text-center" style="font-size: 3.5rem; font-weight: 300; line-height: 1.1; letter-spacing: -0.02em;">
             {{title}}
         </h1>
         
-        <div class="text-gray mb-12" style="font-size: 1.125rem; line-height: 1.75; letter-spacing: 0.01em;">
+        <div class="text-gray mb-12" style="font-size: 1.125rem; line-height: 1.75; letter-spacing: 0.005em;">
             {{summary}}
         </div>
         
-        <div class="flex flex-col md:flex-row gap-12 md:gap-16 text-sm">
+        <div class="flex flex-col md:flex-row gap-16 md:gap-20 text-sm">
             <div class="flex-1">
-                <div class="text-gray-dark mb-2" style="letter-spacing: 0.05em; font-weight: 500; font-size: 0.8125rem;">ROLE</div>
-                <div class="text-dark">{{role}}</div>
+                <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">ROLE</div>
+                <div class="text-dark" style="line-height: 1.7;">{{role}}</div>
             </div>
             <div class="flex-1">
-                <div class="text-gray-dark mb-2" style="letter-spacing: 0.05em; font-weight: 500; font-size: 0.8125rem;">TEAM</div>
-                <div class="text-dark">{{team}}</div>
+                <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">TEAM</div>
+                <div class="text-dark" style="line-height: 1.7;">{{team}}</div>
             </div>
             <div class="flex-1">
-                <div class="text-gray-dark mb-2" style="letter-spacing: 0.05em; font-weight: 500; font-size: 0.8125rem;">SKILLS</div>
-                <div class="flex flex-wrap gap-2">
+                <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">SKILLS</div>
+                <div class="flex flex-wrap gap-2.5">
                     {{tags}}
-                        <span class="text-gray border border-gray px-2 py-1" style="font-size: 0.75rem; letter-spacing: 0.05em;">{{title}}</span>
+                        <span class="text-gray border border-gray/50 px-3 py-1.5 rounded-md transition-colors duration-300 hover:border-gray" style="font-size: 0.8125rem; letter-spacing: 0.05em; font-weight: 400;">{{title}}</span>
                     {{/tags}}
                 </div>
             </div>
@@ -31,18 +31,18 @@
     </div>
 </section>
 <!-- Main Content -->
-<section class="pb-24">
-    <div class="container mx-auto px-8 max-w-5xl">
+<section class="pb-32">
+    <div class="container mx-auto px-8 max-w-6xl">
         {{if movie}}
-        <div class="mb-24 squircle-container">
-            <video src="{{movie}}" class="w-full h-auto squircle" autoplay controls loop></video>
+        <div class="mb-24">
+            <video src="{{movie}}" class="w-full h-auto" autoplay controls loop></video>
         </div>
         {{/if}}
         
         {{if intro_images}}
         {{intro_images}}
-        <div class="mb-24 squircle-container">
-            <img src="/assets/{{title}}" class="w-full h-auto squircle" alt="">
+        <div class="mb-24">
+            <img src="{{ glide src='/assets/{title}' width='1400' quality='85' format='webp' }}" class="w-full h-auto" alt="" loading="lazy">
         </div>
         {{/intro_images}}
         {{/if}}
@@ -53,8 +53,8 @@
                     {{ text|markdown }}
                 </div>
             {{ elseif type == "image" }}
-                <div class="mb-6 squircle-container">
-                    <img src="/assets/{{image:title}}" class="w-full h-auto squircle" alt="">
+                <div class="mb-6">
+                    <img src="{{ glide src='/assets/{image:title}' width='1400' quality='85' format='webp' }}" class="w-full h-auto" alt="" loading="lazy">
                 </div>
             {{ /if }}
         {{/content_area}}
@@ -77,19 +77,19 @@
             <div class="grid grid-cols-2 gap-12 mb-24">
                 <div>
                     <div class="text-gray-dark text-center mb-4" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;">BEFORE</div>
-                    {{before}}
-                    <div class="mb-4 squircle-container">
-                        <img src="{{before_image}}" class="w-full h-auto squircle" alt="{{title}}">
-                    </div>
+                        {{before}}
+                        <div class="mb-4">
+                            <img src="{{ glide:before_image width='800' quality='85' format='webp' }}" class="w-full h-auto" alt="{{title}}" loading="lazy">
+                        </div>
                     <div class="text-gray px-6" style="font-size: 0.9375rem; line-height: 1.6;">{{before_description}}</div>
                     {{/before}}
                 </div>
                 <div>
                     <div class="text-gray-dark text-center mb-4" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;">AFTER</div>
-                    {{after}}
-                    <div class="mb-4 squircle-container">
-                        <img src="{{after_image}}" class="w-full h-auto squircle" alt="{{title}}">
-                    </div>
+                        {{after}}
+                        <div class="mb-4">
+                            <img src="{{ glide:after_image width='800' quality='85' format='webp' }}" class="w-full h-auto" alt="{{title}}" loading="lazy">
+                        </div>
                     <div class="text-gray px-6" style="font-size: 0.9375rem; line-height: 1.6;">{{after_description}}</div>
                     {{/after}}
                 </div>
@@ -122,20 +122,20 @@
         
             <div class="mb-24">
                 <div id="horizontal-alignment-{{increment:d from='1'}}" class="space-y-6" role="tabpanel" aria-labelledby="horizontal-alignment-item-{{increment:e from='1'}}">
-                    {{before}}
-                    <div class="squircle-container">
-                        <img src="{{before_image}}" class="w-full h-auto squircle" alt="">
-                    </div>
+                        {{before}}
+                        <div>
+                            <img src="{{ glide:before_image width='800' quality='85' format='webp' }}" class="w-full h-auto" alt="" loading="lazy">
+                        </div>
                     <div class="text-gray mx-auto" style="font-size: 0.9375rem; line-height: 1.6;">
                         {{before_description}}
                     </div>
                     {{/before}}
                 </div>
                 <div id="horizontal-alignment-{{increment:i from='200'}}" class="hidden space-y-6" role="tabpanel" aria-labelledby="horizontal-alignment-item-{{increment:j from='200'}}">
-                    {{after}}
-                    <div class="squircle-container">
-                        <img src="{{after_image}}" class="w-full h-auto squircle" alt="">
-                    </div>
+                        {{after}}
+                        <div>
+                            <img src="{{ glide:after_image width='800' quality='85' format='webp' }}" class="w-full h-auto" alt="" loading="lazy">
+                        </div>
                     <div class="text-gray mx-auto" style="font-size: 0.9375rem; line-height: 1.6;">
                         {{after_description}}
                     </div>
