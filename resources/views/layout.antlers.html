@@ -4,7 +4,46 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- SEO Meta Tags -->
         <title>{{ title ?? site:name }}</title>
+        <meta name="description" content="{{ seo_description ?? 'Conrad Fulbrook - Product Designer specializing in healthcare and fintech. RISD MFA with 10 years of experience crafting thoughtful digital experiences.' }}">
+        <meta name="author" content="Conrad Fulbrook">
+        <link rel="canonical" href="{{ permalink }}">
+        
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ permalink }}">
+        <meta property="og:title" content="{{ title ?? site:name }}">
+        <meta property="og:description" content="{{ seo_description ?? 'Product Designer specializing in healthcare and fintech' }}">
+        {{ if main_image }}
+        <meta property="og:image" content="{{ config:app:url }}{{ glide:main_image width='1200' height='630' fit='crop' quality='85' format='jpg' }}">
+        {{ /if }}
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ title ?? site:name }}">
+        <meta name="twitter:description" content="{{ seo_description ?? 'Product Designer specializing in healthcare and fintech' }}">
+        
+        <!-- Structured Data (Schema.org) -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Conrad Fulbrook",
+            "jobTitle": "Product Designer",
+            "description": "Product Designer specializing in healthcare and fintech with RISD MFA",
+            "url": "https://conradfulbrookdesign.com",
+            "sameAs": [
+                "https://www.linkedin.com/in/conrad-fulbrook/"
+            ],
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Rhode Island School of Design"
+            }
+        }
+        </script>
+        
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script> -->
