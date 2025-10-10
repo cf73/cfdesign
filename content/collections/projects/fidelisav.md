@@ -1,10 +1,11 @@
 ---
 id: b683bcd5-1876-40a9-a5d7-4c8220f71154
+published: false
 blueprint: project
 title: FidelisAV
 coming_soon: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739550680
+updated_at: 1760055102
 main_image: fidelis0.png
 summary:
   -
@@ -24,4 +25,5 @@ summary:
         text: ', America’s leading high-end audio importer, distributor and reseller, I designed and built a new website that expresses the beauty and sophistication of the products available, while driving sales of pre-owned items.'
 role: 'Design and Build'
 team: Freelance
+before_and_after: false
 ---
