@@ -15,7 +15,14 @@ export default defineConfig({
                 // 'resources/js/cp.js',
             ],
             refresh: true,
+            publicDirectory: 'public',
+            buildDirectory: 'build'
         }),
         // vue2(),
     ],
+    server: {
+        hmr: {
+            host: 'localhost'
+        }
+    },
 });
