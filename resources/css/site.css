@@ -2,21 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Neue Haas Grotesk Display - for headlines */
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-15UltTh.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-25Th.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
+/* Neue Haas Grotesk Display - for headlines (only weights we use: 300, 400, 500) */
 @font-face {
     font-family: 'Neue Haas Grotesk Display';
     src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-45Lt.ttf') format('truetype');
@@ -38,114 +24,12 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-75Bd.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 
-/* Neue Haas Grotesk Text - for body copy */
+/* Neue Haas Grotesk Text - for body copy (only weight we use: 400) */
 @font-face {
     font-family: 'Neue Haas Grotesk Text';
     src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-56It.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-65Md.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Neue Haas Grotesk Display - for headlines */
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-15UltTh.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-25Th.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-45Lt.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-55Rg.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-65Md.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Display';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Display Pro/NHaasGroteskDSPro-75Bd.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Neue Haas Grotesk Text - for body copy */
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-56It.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-65Md.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text';
-    src: url('../fonts/NeueHaasGroteskPro/Neue Haas Grotesk Text Pro/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
-    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
