@@ -77,5 +77,34 @@
         referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
     <script src="/js/preline.js"></script>
+    
+    <!-- Scroll-aware INDEX navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('site-header');
+            if (!header) return; // Only run on pages with header
+            
+            let lastScrollTop = 0;
+            const buffer = 50;
+            let isVisible = true;
+            
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // Scrolling down and past buffer
+                if (scrollTop > lastScrollTop && scrollTop > buffer && isVisible) {
+                    header.style.transform = 'translateY(-100%)';
+                    isVisible = false;
+                }
+                // Scrolling up
+                else if (scrollTop < lastScrollTop && !isVisible) {
+                    header.style.transform = 'translateY(0)';
+                    isVisible = true;
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
     </body>
 </html>
