@@ -12,7 +12,9 @@
     <body class="bg-warmblack font-avenir leading-normal text-primary antialiased">
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                {{partial:header}}    
+                {{ if template != "home" }}
+                    {{partial:header}}
+                {{ /if }}
                 {{ template_content }}
             </div>
         </div>
@@ -36,6 +38,7 @@
         alt="Web Analytics"
         referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
+    <script src="/js/squircle.js"></script>
     <script src="/js/preline.js"></script>
     </body>
 </html>

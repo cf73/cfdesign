@@ -1,17 +1,47 @@
-<!-- Enhanced Header with Modern Design -->
-<header class="relative z-50">
-    <div class="container mx-auto px-8 py-8 flex flex-col space-y-[30px] md:space-y-0 md:flex-row justify-between items-center">
-        <a href="/" class="group">
-            <div class="transition-all duration-300 group-hover:scale-105">
-                <div class="text-center md:text-left">
-                    <div class="text-secondary text-3xl md:text-4xl font-medium tracking-tight leading-tight relative">
-                        conrad fulbrook
-                        <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-red transition-all duration-300 group-hover:w-full"></div>
-                    </div>
-                    <div class="text-warmred text-lg md:text-xl font-light tracking-wide leading-tight mt-1">design portfolio</div>
-                </div>
-            </div>
-        </a>
-        {{partial:social}}
+<!-- Minimal Header with scroll behavior -->
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-out">
+    <div class="container mx-auto px-8 py-6 max-w-6xl">
+        <nav class="text-center">
+            <a href="/" class="text-dark hover:text-gray transition-colors" style="font-size: 0.875rem; letter-spacing: 0.08em; font-weight: 500;">INDEX</a>
+        </nav>
     </div>
 </header>
+
+<script>
+(function() {
+    let lastScrollTop = 0;
+    let scrollBuffer = 50; // 50px buffer zone
+    let isHeaderVisible = true;
+    const header = document.getElementById('site-header');
+    
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Don't hide header if we're at the very top
+        if (currentScroll <= 0) {
+            if (!isHeaderVisible) {
+                header.style.transform = 'translateY(0)';
+                isHeaderVisible = true;
+            }
+            lastScrollTop = currentScroll;
+            return;
+        }
+        
+        // Check if scroll difference is greater than buffer
+        const scrollDiff = Math.abs(currentScroll - lastScrollTop);
+        
+        if (scrollDiff > scrollBuffer) {
+            if (currentScroll > lastScrollTop && isHeaderVisible) {
+                // Scrolling down - hide header
+                header.style.transform = 'translateY(-100%)';
+                isHeaderVisible = false;
+            } else if (currentScroll < lastScrollTop && !isHeaderVisible) {
+                // Scrolling up - show header
+                header.style.transform = 'translateY(0)';
+                isHeaderVisible = true;
+            }
+            lastScrollTop = currentScroll;
+        }
+    }, { passive: true });
+})();
+</script>

@@ -12,8 +12,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                'sans': ['Avenir', 'system-ui', 'sans-serif'],
-                avenir: ['Avenir', 'system-ui', 'sans-serif'],
+                'sans': ['Neue Haas Grotesk Text', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                'display': ['Neue Haas Grotesk Display', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             },
             fontSize: {
                 'xs': ['0.75rem', { lineHeight: '1rem' }],
@@ -44,21 +44,18 @@ export default {
                 'loose': '2',
             },
             colors: {
-                'primary': '#FFE9EB',
-                'secondary': '#FBDFE2',
-                'warmred': '#DE4353',
-                'warmred-light': '#F56573',
-                'warmred-dark': '#C73A4A',
-                'warmblack': '#181B18',
-                'warmblack-light': '#2A2D2A',
-                'warmgray': '#2F302F',
-                'warmgray-light': '#404140',
-                'brown': '#4D4243',
-                'brown-light': '#5D5253',
-                'accent': '#FF6B6B',
-                'accent-light': '#FF8E8E',
-                'neutral': '#F8F9FA',
-                'neutral-dark': '#E9ECEF',
+                // Retro-modern palette inspired by 1980s Macintosh
+                'primary': '#FFFFFF',
+                'accent': '#1a1a1a', // Near-black for key accents
+                'dark': '#1a1a1a', // Rich near-black for text
+                'dark-light': '#2d2d2d',
+                'gray': '#5a5a5a', // Warm mid-gray
+                'gray-light': '#8a8a8a',
+                'gray-dark': '#3a3a3a',
+                'border': '#b8b0ad', // Slightly darker than background
+                'background': '#d3ccc9', // Main warm beige
+                'surface': '#e8e3e0', // Lighter variant for cards/sections
+                'surface-dark': '#c4bdb9', // Darker variant for hero
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -66,6 +63,7 @@ export default {
                 'gradient-warm': 'linear-gradient(135deg, #FFE9EB 0%, #FBDFE2 100%)',
                 'gradient-dark': 'linear-gradient(135deg, #181B18 0%, #2F302F 100%)',
                 'gradient-red': 'linear-gradient(135deg, #DE4353 0%, #F56573 100%)',
+                'gradient-subtle': 'linear-gradient(160deg, #ccc5c2 0%, #e0d9d6 50%, #ccc5c2 100%)',
             },
             boxShadow: {
                 'warm': '0 10px 25px -5px rgba(222, 67, 83, 0.1), 0 10px 10px -5px rgba(222, 67, 83, 0.04)',
