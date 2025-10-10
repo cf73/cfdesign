@@ -5,41 +5,216 @@
 @font-face {
     font-family: 'Avenir';
     src: url('/public/fonts/AvenirNextRoundedPro-Reg.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'AvenirBold';
-    src: url('/public/fonts/AvenirNextRoundedPro-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'AvenirMedium';
+    font-family: 'Avenir';
     src: url('/public/fonts/AvenirNextRoundedPro-Med.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('/public/fonts/AvenirNextRoundedPro-Demi.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('/public/fonts/AvenirNextRoundedPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('/public/fonts/AvenirNextRoundedPro-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('/public/fonts/AvenirNextRoundedPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
 }
 
 
 @layer base {
+    /* Typography Scale */
     h1 {
-        @apply text-4xl xl:text-5xl;
+        @apply text-4xl md:text-5xl xl:text-6xl font-bold leading-tight tracking-tight;
+        font-weight: 700;
     }
     h2 {
-        @apply text-2xl xl:text-3xl;
+        @apply text-3xl md:text-4xl xl:text-5xl font-semibold leading-tight tracking-tight;
+        font-weight: 600;
     }
+    h3 {
+        @apply text-2xl md:text-3xl font-medium leading-snug tracking-tight;
+        font-weight: 500;
+    }
+    h4 {
+        @apply text-xl md:text-2xl font-medium leading-snug;
+        font-weight: 500;
+    }
+    h5 {
+        @apply text-lg md:text-xl font-medium leading-snug;
+        font-weight: 500;
+    }
+    h6 {
+        @apply text-base md:text-lg font-medium leading-snug;
+        font-weight: 500;
+    }
+    
+    /* Body Text */
     p {
-        @apply mb-[.5em];
+        @apply mb-4 leading-relaxed;
+        font-weight: 400;
     }
-    strong {
-        font-family: 'AvenirBold';
+    
+    /* Enhanced Strong/Bold */
+    strong, b {
+        font-weight: 600;
     }
+    
+    /* Meta Text */
     .meta {
-        @apply uppercase text-[12px] leading-[12px] tracking-[12%]; font-family: 'AvenirBold';
+        @apply uppercase text-xs leading-tight tracking-wider;
+        font-weight: 600;
+    }
+    
+    /* Links */
+    a {
+        @apply transition-colors duration-200;
+    }
+    
+    /* Lists */
+    ul, ol {
+        @apply mb-4 pl-6;
+    }
+    
+    li {
+        @apply mb-2 leading-relaxed;
+    }
+    
+    /* Blockquotes */
+    blockquote {
+        @apply border-l-4 border-warmred pl-6 py-2 italic text-lg leading-relaxed;
+        font-weight: 400;
     }
 }
 
 @layer components {
+    /* Typography Utilities */
+    .text-display {
+        @apply text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight;
+        font-weight: 700;
+    }
     
+    .text-hero {
+        @apply text-3xl md:text-4xl lg:text-5xl font-medium leading-tight tracking-tight;
+        font-weight: 500;
+    }
+    
+    .text-large {
+        @apply text-xl md:text-2xl leading-relaxed;
+        font-weight: 400;
+    }
+    
+    .text-small {
+        @apply text-sm leading-relaxed;
+        font-weight: 400;
+    }
+    
+    .text-caption {
+        @apply text-xs leading-tight tracking-wider uppercase;
+        font-weight: 600;
+    }
+    
+    /* Modern Design Components */
+    .card {
+        @apply bg-warmgray-light rounded-2xl p-8 shadow-warm transition-all duration-300 hover:shadow-warm-lg hover:-translate-y-1;
+    }
+    
+    .card-gradient {
+        @apply bg-gradient-dark rounded-2xl p-8 shadow-warm transition-all duration-300 hover:shadow-warm-lg hover:-translate-y-1;
+    }
+    
+    .btn-primary {
+        @apply bg-gradient-red text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95;
+    }
+    
+    .btn-secondary {
+        @apply border-2 border-warmred text-warmred px-8 py-4 rounded-full font-medium transition-all duration-300 hover:bg-warmred hover:text-white hover:shadow-glow;
+    }
+    
+    .glass-effect {
+        @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+    }
+    
+    .floating-animation {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    
+    /* Enhanced readability */
+    .prose-custom {
+        @apply text-base leading-relaxed;
+    }
+    
+    .prose-custom h1 {
+        @apply text-3xl md:text-4xl font-bold leading-tight mb-6;
+    }
+    
+    .prose-custom h2 {
+        @apply text-2xl md:text-3xl font-semibold leading-tight mb-4;
+    }
+    
+    .prose-custom h3 {
+        @apply text-xl md:text-2xl font-medium leading-snug mb-3;
+    }
+    
+    .prose-custom p {
+        @apply mb-4 leading-relaxed;
+    }
+    
+    .prose-custom strong {
+        @apply font-semibold;
+    }
+    
+    .prose-custom a {
+        @apply text-warmred hover:text-primary transition-colors duration-200;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(222, 67, 83, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(222, 67, 83, 0.6); }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
 }

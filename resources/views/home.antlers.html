@@ -1,32 +1,87 @@
-<div class="container mx-auto px-8 md:px-[112px] mt-[104px] flex flex-col space-y-[12px]">
-    <div class="text-[16px] leading-none font-avenirmed">Hey there!</div>
-    <div id="intro" class="text-[32px] text-secondary leading-[42px]">
-        {{intro_text}}
+<!-- Hero Section with Enhanced Design -->
+<div class="relative overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-gradient-dark"></div>
+    <div class="absolute top-20 right-20 w-72 h-72 bg-warmred/10 rounded-full blur-3xl floating-animation"></div>
+    <div class="absolute bottom-20 left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl floating-animation" style="animation-delay: -3s;"></div>
+    
+    <div class="relative container mx-auto px-8 pt-[120px] pb-[80px] flex flex-col space-y-8">
+        <div class="fade-in-up text-lg md:text-xl font-medium text-primary tracking-wide">Hey there!</div>
+        <div id="intro" class="fade-in-up stagger-1 text-2xl md:text-3xl lg:text-4xl text-secondary leading-relaxed font-light max-w-5xl">
+            {{intro_text}}
+        </div>
+        <div class="fade-in-up stagger-2 mt-8">
+            <a href="#projects" class="btn-primary inline-flex items-center space-x-3">
+                <span>View My Work</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" stroke-width="2">
+                    <path d="M5 12l14 0"></path>
+                    <path d="M15 16l4 -4"></path>
+                    <path d="M15 8l4 4"></path>
+                </svg>
+            </a>
+        </div>
     </div>
 </div>
 
-<div id="projects" class="w-full mt-[36px] pt-[60px] pb-[120px] bg-warmgray">
-    <div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-[60px]">
-        {{collection:projects}}
-            <div class="flex flex-col space-y-[9px]">
-                {{if coming_soon}}
-                    <img src="{{main_image}}" alt="">
-                    <div class="md:px-[50px] text-[16px] leading-[21px] space-y-[9px]">
-                        {{summary}}
-                        <div class="meta text-warmred">Case study coming soon</div>
-                    </div>
-                    {{else}}
-                    <a href="{{url}}"><img src="{{main_image}}" alt=""></a>
-                    <div class="md:px-[50px] text-[16px] leading-[21px] space-y-[3px]">
-                        {{summary}}
-                        <a href="{{url}}"><span class="flex flex-row meta items-center text-warmred">
-                            View Project
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M5 12l14 0"></path> <path d="M15 16l4 -4"></path> <path d="M15 8l4 4"></path></svg></span></a>
-                    </div>
-                {{/if}}
-            </div>
-        {{/collection:projects}}
+<!-- Projects Section with Enhanced Design -->
+<section id="projects" class="relative py-24 bg-gradient-to-b from-warmgray to-warmblack">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-warmred to-transparent"></div>
+        <div class="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-warmred to-transparent"></div>
     </div>
-</div>
+    
+    <div class="relative container mx-auto px-8">
+        <div class="text-center mb-16 fade-in-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Featured Projects</h2>
+            <p class="text-lg text-secondary max-w-2xl mx-auto">A collection of my recent work across various industries and challenges</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {{collection:projects}}
+                <div class="fade-in-up card-gradient group">
+                    {{if coming_soon}}
+                        <div class="relative overflow-hidden rounded-xl mb-6">
+                            <img src="{{main_image}}" alt="" class="w-full h-auto transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 bg-warmred/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                                Coming Soon
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl md:text-3xl font-semibold leading-tight mb-4 text-primary">{{title}}</h3>
+                            <div class="text-base md:text-lg leading-relaxed space-y-4 text-secondary">
+                                {{summary}}
+                            </div>
+                        </div>
+                        {{else}}
+                        <a href="{{url}}" class="block relative overflow-hidden rounded-xl mb-6 group-hover:shadow-glow transition-all duration-300">
+                            <img src="{{main_image}}" alt="" class="w-full h-auto transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="btn-primary">
+                                    <span class="flex items-center space-x-2">
+                                        <span>View Project</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" stroke-width="2">
+                                            <path d="M5 12l14 0"></path>
+                                            <path d="M15 16l4 -4"></path>
+                                            <path d="M15 8l4 4"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <h3 class="text-2xl md:text-3xl font-semibold leading-tight mb-4 text-primary">{{title}}</h3>
+                            <div class="text-base md:text-lg leading-relaxed space-y-4 text-secondary">
+                                {{summary}}
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+            {{/collection:projects}}
+        </div>
+    </div>
+</section>
 
 {{partial:_footer1}}
