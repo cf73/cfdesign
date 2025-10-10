@@ -67,7 +67,7 @@ return [
         |
         */
 
-        'cache' => false,
+        'cache' => true,
         'cache_path' => public_path('img'),
 
         /*
@@ -98,7 +98,9 @@ return [
         */
 
         'presets' => [
-            // 'small' => ['w' => 200, 'h' => 200, 'q' => 75, 'fit' => 'crop'],
+            'homepage' => ['w' => 2400, 'q' => 80, 'fm' => 'webp', 'sharp' => 15],
+            'project' => ['w' => 2800, 'q' => 80, 'fm' => 'webp', 'sharp' => 15],
+            'before_after' => ['w' => 1600, 'q' => 80, 'fm' => 'webp', 'sharp' => 15],
         ],
 
         /*
