@@ -6,7 +6,7 @@ main_image: fidelismusicsystemsdylan.png
 coming_soon: false
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1758296022
+updated_at: 1760121180
 summary:
   -
     type: paragraph
@@ -28,9 +28,12 @@ tags:
   - identity
   - front-end
   - responsive-web
-intro_images:
-  - fidelismusicsystems1.png
 content_area:
+  -
+    id: mgl6p1xz
+    image: fidelismusicsystemslucinda.png
+    type: image
+    enabled: true
   -
     id: mffy1klx
     text:
