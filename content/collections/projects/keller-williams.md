@@ -20,7 +20,7 @@ summary:
         type: text
         text: ', I led a team to design a new mortgage platform, successfully disrupting a crowded market through focusing on financially empowering homebuyers.'
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1739550256
+updated_at: 1760146177
 role: 'Lead Product and UX/UI Designer'
 team: 'Craft (agency)'
 tags:
@@ -175,4 +175,5 @@ content_area:
             text: "Mapping flows and buyer modalities, looking for areas to 'intercept and reset' behaviors via innovative UX."
     type: text
     enabled: true
+before_and_after: false
 ---
