@@ -45,7 +45,7 @@
             {{summary}}
         </div>
         
-        <div class="flex flex-col md:flex-row gap-16 md:gap-20 text-sm">
+        <div class="flex flex-col md:flex-row gap-16 md:gap-20 text-sm mb-4">
             <div class="flex-1">
                 <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">ROLE</div>
                 <div class="text-dark" style="line-height: 1.7;">{{role}}</div>
@@ -54,14 +54,12 @@
                 <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">TEAM</div>
                 <div class="text-dark" style="line-height: 1.7;">{{team}}</div>
             </div>
-            <div class="flex-1">
-                <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">SKILLS</div>
-                <div class="flex flex-wrap gap-2.5">
-                {{tags}}
-                        <span class="text-gray border border-gray/50 px-3 py-1.5 rounded-md transition-colors duration-300 hover:border-gray" style="font-size: 0.8125rem; letter-spacing: 0.05em; font-weight: 400;">{{title}}</span>
-                {{/tags}}
-                </div>
-            </div>
+        </div>
+        
+        <div class="flex flex-wrap gap-2.5">
+        {{tags}}
+            <span class="text-gray border border-gray/50 px-3 py-1.5 rounded-md transition-colors duration-300 hover:border-gray" style="font-size: 0.8125rem; letter-spacing: 0.05em; font-weight: 400;">{{title}}</span>
+        {{/tags}}
         </div>
     </div>
 </section>
