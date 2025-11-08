@@ -27,7 +27,7 @@ summary:
         text: 'UX Triage '
       -
         type: text
-        text: 'catches what AI misses in 30 seconds. Upload screenshots, get Nielsen Norman heuristic analysis, export to Markdown, paste into your AI agent. From analysis to implementation instantly. 95% cheaper than consultants.'
+        text: 'catches what AI misses in 30 seconds. Upload screenshots, get Nielsen Norman heuristic analysis, export to Markdown, paste into your AI agent. From analysis to implementation instantly. 99% cheaper than consultants.'
 role: 'Concept, Design and Build'
 team: Solo
 coming_soon: false
@@ -38,7 +38,7 @@ tags:
   - lean-startup
 before_and_after: false
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1760057827
+updated_at: 1762579874
 content_area:
   -
     id: mgk3mswn

@@ -2,27 +2,26 @@
 
 <div class="bg-background min-h-screen">
     <div class="container mx-auto px-8 max-w-6xl">
-        
-        <!-- Hero -->
-        <section class="pt-20 lg:pt-32 pb-20 lg:pb-24 text-center">
-            <h1 class="font-display text-dark mb-3" style="font-size: 3rem; font-weight: 300; line-height: 1.05; letter-spacing: -0.02em;">
-                Conrad Fulbrook
-            </h1>
-            <p class="text-gray mb-12" style="font-size: 0.9375rem; letter-spacing: 0.02em; font-weight: 400; line-height: 1.7;">
-                Designer — RISD MFA — 
-                <a href="/Conrad-Fulbrook-resume-2025-10.pdf" target="_blank" class="border-b border-gray hover:border-dark transition-colors">Resume</a>
-            </p>
-        </section>
-        
-        <!-- Projects -->
-        <section class="pb-32">
-            <div class="space-y-40">
+        <div class="grid gap-16 pb-32 lg:grid-cols-2 lg:gap-20">
+            
+            <!-- Hero -->
+            <section class="pt-20 lg:pt-32 pb-8 lg:pb-10 text-center lg:text-left lg:col-span-2">
+                <h1 class="font-display text-dark mb-3" style="font-size: 3rem; font-weight: 300; line-height: 1.05; letter-spacing: -0.02em;">
+                    Conrad Fulbrook
+                </h1>
+                <p class="text-gray" style="font-size: 0.9375rem; letter-spacing: 0.02em; font-weight: 400; line-height: 1.7;">
+                    Designer — RISD MFA — 
+                    <a href="/Conrad-Fulbrook-resume-2025-10.pdf" target="_blank" class="border-b border-gray hover:border-dark transition-colors">Resume</a>
+                </p>
+            </section>
+            
+            <!-- Projects -->
             {{collection:projects}}
-                <div class="group">
+                <article class="group flex flex-col gap-7">
                     {{if coming_soon}}
-                <div class="relative mb-10 transition-transform duration-500 ease-out group-hover:scale-[1.02]">
-                    <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
-                </div>
+                        <div class="relative transition-transform duration-500 ease-out group-hover:scale-[1.02]">
+                            <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
+                        </div>
                         <div class="space-y-7">
                             <div class="flex items-center gap-4">
                                 <h3 class="text-dark" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
@@ -37,32 +36,28 @@
                                 {{/tags}}
                             </div>
                         </div>
-                        {{else}}
-                        <div>
-                <a href="{{url}}" class="block relative mb-10 transition-transform duration-500 ease-out group-hover:scale-[1.02] cursor-pointer">
-                    <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
-                </a>
-                            <div class="space-y-7">
-                                <h3 class="text-dark transition-colors duration-300 group-hover:text-gray" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
-                                <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.8; letter-spacing: 0.005em;">
-                                    {{summary}}
-                                </div>
-                                <a href="{{url}}" class="inline-block text-dark text-sm border-b-2 border-dark/60 hover:border-gray hover:text-gray transition-all duration-300 mono" style="font-weight: 500;">
-                                    VIEW PROJECT
-                                </a>
-                                <div class="flex flex-wrap gap-2.5 pt-3">
-                                    {{tags}}
-                                        <span class="text-gray border border-gray/50 px-3 py-1.5 rounded-md transition-colors duration-300 hover:border-gray" style="font-size: 0.8125rem; letter-spacing: 0.05em; font-weight: 400;">{{title}}</span>
-                                    {{/tags}}
-                                </div>
+                    {{else}}
+                        <a href="{{url}}" class="block relative transition-transform duration-500 ease-out group-hover:scale-[1.02] cursor-pointer">
+                            <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
+                        </a>
+                        <div class="space-y-7">
+                            <h3 class="text-dark transition-colors duration-300 group-hover:text-gray" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
+                            <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.8; letter-spacing: 0.005em;">
+                                {{summary}}
+                            </div>
+                            <a href="{{url}}" class="inline-block text-dark text-sm border-b-2 border-dark/60 hover:border-gray hover:text-gray transition-all duration-300 mono" style="font-weight: 500;">
+                                VIEW PROJECT
+                            </a>
+                            <div class="flex flex-wrap gap-2.5 pt-3">
+                                {{tags}}
+                                    <span class="text-gray border border-gray/50 px-3 py-1.5 rounded-md transition-colors duration-300 hover:border-gray" style="font-size: 0.8125rem; letter-spacing: 0.05em; font-weight: 400;">{{title}}</span>
+                                {{/tags}}
                             </div>
                         </div>
                     {{/if}}
-                </div>
+                </article>
             {{/collection:projects}}
-            </div>
-        </section>
-        
+        </div>
     </div>
 </div>
 
