@@ -57,9 +57,9 @@
             <div class="flex-1">
                 <div class="text-gray-dark mb-3 mono" style="font-weight: 500; font-size: 0.8125rem;">SKILLS</div>
                 <div class="flex flex-wrap gap-2.5">
-                    {{tags}}
+                {{tags}}
                         <span class="text-gray border border-gray/50 px-3 py-1.5 rounded-md transition-colors duration-300 hover:border-gray" style="font-size: 0.8125rem; letter-spacing: 0.05em; font-weight: 400;">{{title}}</span>
-                    {{/tags}}
+                {{/tags}}
                 </div>
             </div>
         </div>
@@ -68,31 +68,31 @@
 <!-- Main Content -->
 <section class="pb-32">
     <div class="container mx-auto px-8 max-w-7xl">
-        {{if movie}}
+    {{if movie}}
         <div class="mb-24">
             <video src="{{movie}}" class="w-full h-auto" autoplay controls loop></video>
         </div>
-        {{/if}}
+    {{/if}}
         
-        {{if intro_images}}
-        {{intro_images}}
+    {{if intro_images}}
+    {{intro_images}}
         <div class="mb-24">
             <img src="{{ glide src='/assets/{title}' width='2800' quality='90' format='webp' sharpen='10' }}" class="w-full h-auto" alt="" loading="lazy">
         </div>
-        {{/intro_images}}
-        {{/if}}
+    {{/intro_images}}
+    {{/if}}
         
-        {{content_area}}
-            {{ if type == "text" }}
+    {{content_area}}
+        {{ if type == "text" }}
                 <div class="max-w-3xl mx-auto mb-16 text-gray prose-custom" style="font-size: 1.0625rem; line-height: 1.75; letter-spacing: 0.01em;">
-                    {{ text|markdown }}
-                </div>
-            {{ elseif type == "image" }}
+                {{ text|markdown }}
+            </div>
+        {{ elseif type == "image" }}
                 <div class="mb-6">
                     <img src="{{ glide src='/assets/{image:title}' width='2800' quality='90' format='webp' sharpen='10' }}" class="w-full h-auto" alt="" loading="lazy">
                 </div>
-            {{ /if }}
-        {{/content_area}}
+        {{ /if }}
+    {{/content_area}}
     </div>
 </section>
 </div>
@@ -115,7 +115,7 @@
                         {{before}}
                         <div class="mb-4">
                             <img src="{{ glide:before_image width='1600' quality='90' format='webp' sharpen='10' }}" class="w-full h-auto" alt="{{title}}" loading="lazy">
-                        </div>
+                    </div>
                     <div class="text-gray px-6" style="font-size: 0.9375rem; line-height: 1.6;">{{before_description}}</div>
                     {{/before}}
                 </div>
@@ -124,7 +124,7 @@
                         {{after}}
                         <div class="mb-4">
                             <img src="{{ glide:after_image width='1600' quality='90' format='webp' sharpen='10' }}" class="w-full h-auto" alt="{{title}}" loading="lazy">
-                        </div>
+                    </div>
                     <div class="text-gray px-6" style="font-size: 0.9375rem; line-height: 1.6;">{{after_description}}</div>
                     {{/after}}
                 </div>
@@ -140,47 +140,47 @@
             
             <nav class="mb-8 flex justify-center gap-8" aria-label="Tabs" role="tablist">
                 <button type="button" class="hs-tab-active:text-dark text-gray uppercase hover:text-dark focus:outline-none active" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;"
-                    id="horizontal-alignment-item-{{increment:a from='1'}}"
-                    aria-selected="true"
-                    data-hs-tab="#horizontal-alignment-{{increment:b from='1'}}"
-                    aria-controls="horizontal-alignment-{{increment:c from='1'}}" role="tab">
-                    Before
-                </button>
+            id="horizontal-alignment-item-{{increment:a from='1'}}"
+            aria-selected="true"
+            data-hs-tab="#horizontal-alignment-{{increment:b from='1'}}"
+            aria-controls="horizontal-alignment-{{increment:c from='1'}}" role="tab">
+                Before
+            </button>
                 <button type="button" class="hs-tab-active:text-dark text-gray uppercase hover:text-dark focus:outline-none" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;"
                     id="horizontal-alignment-item-{{increment:f from='2'}}"
-                    aria-selected="false"
-                    data-hs-tab="#horizontal-alignment-{{increment:g from='200'}}"
-                    aria-controls="horizontal-alignment-{{increment:h from='200'}}" role="tab">
-                    After
-                </button>
+            aria-selected="false"
+            data-hs-tab="#horizontal-alignment-{{increment:g from='200'}}"
+            aria-controls="horizontal-alignment-{{increment:h from='200'}}" role="tab">
+                After
+            </button>
             </nav>
-        
+    
             <div class="mb-24">
                 <div id="horizontal-alignment-{{increment:d from='1'}}" class="space-y-6" role="tabpanel" aria-labelledby="horizontal-alignment-item-{{increment:e from='1'}}">
-                        {{before}}
+                {{before}}
                         <div>
                             <img src="{{ glide:before_image width='1600' quality='90' format='webp' sharpen='10' }}" class="w-full h-auto" alt="" loading="lazy">
                         </div>
                         <div class="text-gray mx-auto" style="font-size: 0.9375rem; line-height: 1.6;">
-                            {{before_description}}
-                        </div>
-                        {{/before}}
-                    </div>
+                    {{before_description}}
+                </div>
+                {{/before}}
+            </div>
                     <div id="horizontal-alignment-{{increment:i from='200'}}" class="hidden space-y-6" role="tabpanel" aria-labelledby="horizontal-alignment-item-{{increment:j from='200'}}">
-                        {{after}}
+                {{after}}
                         <div>
                             <img src="{{ glide:after_image width='1600' quality='90' format='webp' sharpen='10' }}" class="w-full h-auto" alt="" loading="lazy">
                         </div>
                     <div class="text-gray mx-auto" style="font-size: 0.9375rem; line-height: 1.6;">
-                        {{after_description}}
-                    </div>
-                    {{/after}}
+                    {{after_description}}
                 </div>
+                {{/after}}
             </div>
+        </div>
         {{/if}}
         {{/content_area}}
     </div>
 </section>
 {{/if}}
-
+  
 {{partial:_footer}}

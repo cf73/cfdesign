@@ -53,9 +53,15 @@ export default {
                 'gray-light': '#8a8a8a',
                 'gray-dark': '#3a3a3a',
                 'border': '#b8b0ad', // Slightly darker than background
-                'background': '#d3ccc9', // Main warm beige
+                'background': '#ffffff', // Clean white background
                 'surface': '#e8e3e0', // Lighter variant for cards/sections
                 'surface-dark': '#c4bdb9', // Darker variant for hero
+                'norwegian-fjord': '#e3edf4',
+                'norwegian-dusk': '#ede8f5',
+                'norwegian-moss': '#e7f1ea',
+                'norwegian-rose': '#f4e8ea',
+                'norwegian-amber': '#f3efe5',
+                'norwegian-sky': '#e8f2f8',
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -64,6 +70,12 @@ export default {
                 'gradient-dark': 'linear-gradient(135deg, #181B18 0%, #2F302F 100%)',
                 'gradient-red': 'linear-gradient(135deg, #DE4353 0%, #F56573 100%)',
                 'gradient-subtle': 'linear-gradient(160deg, #ccc5c2 0%, #e0d9d6 50%, #ccc5c2 100%)',
+                'gradient-fjord': 'linear-gradient(135deg, #e8f1f7 0%, #dfe9f1 100%)',
+                'gradient-dusk': 'linear-gradient(135deg, #f1ecf8 0%, #e9e4f2 100%)',
+                'gradient-moss': 'linear-gradient(135deg, #ecf4ee 0%, #e3ede6 100%)',
+                'gradient-rose': 'linear-gradient(135deg, #f7ecee 0%, #f0e4e6 100%)',
+                'gradient-amber': 'linear-gradient(135deg, #f7f2e9 0%, #f0ebe1 100%)',
+                'gradient-sky': 'linear-gradient(135deg, #ecf5fa 0%, #e4eef4 100%)',
             },
             boxShadow: {
                 'warm': '0 10px 25px -5px rgba(222, 67, 83, 0.1), 0 10px 10px -5px rgba(222, 67, 83, 0.04)',

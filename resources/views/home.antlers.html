@@ -2,10 +2,10 @@
 
 <div class="bg-background min-h-screen">
     <div class="container mx-auto px-8 max-w-6xl">
-        <div class="grid gap-16 pb-32 lg:grid-cols-2 lg:gap-20">
+        <div class="pb-32">
             
             <!-- Hero -->
-            <section class="pt-20 lg:pt-32 pb-8 lg:pb-10 text-center lg:text-left lg:col-span-2">
+            <section class="pt-20 lg:pt-32 pb-8 lg:pb-10 text-center lg:text-left">
                 <h1 class="font-display text-dark mb-3" style="font-size: 3rem; font-weight: 300; line-height: 1.05; letter-spacing: -0.02em;">
                     Conrad Fulbrook
                 </h1>
@@ -16,21 +16,22 @@
             </section>
             
             <!-- Projects -->
+            <div class="columns-1 lg:columns-2 gap-8 space-y-8">
             {{collection:projects}}
-                <article class="group flex flex-col gap-7">
+                <article class="group flex flex-col gap-2 break-inside-avoid rounded-2xl p-4 mb-8 {{ if index % 6 == 1 }}bg-gradient-to-br from-norwegian-rose/70 to-norwegian-rose/40{{ elseif index % 6 == 2 }}bg-gradient-to-br from-norwegian-fjord/70 to-norwegian-fjord/40{{ elseif index % 6 == 3 }}bg-gradient-to-br from-norwegian-amber/70 to-norwegian-amber/40{{ elseif index % 6 == 4 }}bg-gradient-to-br from-norwegian-moss/70 to-norwegian-moss/40{{ elseif index % 6 == 5 }}bg-gradient-to-br from-norwegian-dusk/70 to-norwegian-dusk/40{{ elseif index % 6 == 0 }}bg-gradient-to-br from-norwegian-sky/70 to-norwegian-sky/40{{ /if }}">
                     {{if coming_soon}}
                         <div class="relative transition-transform duration-500 ease-out group-hover:scale-[1.02]">
                             <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto" loading="lazy">
                         </div>
-                        <div class="space-y-7">
+                        <div class="space-y-3">
                             <div class="flex items-center gap-4">
                                 <div class="flex items-center gap-3">
-                                    <h3 class="text-dark" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
+                                    <h3 class="text-dark" style="font-size: 1.0625rem; font-weight: 500; line-height: 1.8; letter-spacing: 0.005em;">{{title}}</h3>
                                     <span class="text-gray/50" style="font-size: 1.5rem; line-height: 1;" aria-hidden="true">→</span>
                                 </div>
                                 <span class="text-gray text-xs px-2.5 py-1.5 border border-gray/50 rounded-md mono" style="font-weight: 500;">COMING SOON</span>
                             </div>
-                            <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.8; letter-spacing: 0.005em;">
+                            <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.5; letter-spacing: 0.005em;">
                                 {{summary}}
                             </div>
                         </div>
@@ -40,18 +41,19 @@
                         </a>
                         <div class="space-y-3">
                             <div class="flex items-center gap-3">
-                                <h3 class="text-dark transition-colors duration-300 group-hover:text-gray" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
+                                <h3 class="text-dark transition-colors duration-300 group-hover:text-gray" style="font-size: 1.0625rem; font-weight: 500; line-height: 1.8; letter-spacing: 0.005em;">{{title}}</h3>
                                 <a href="{{url}}" class="inline-block text-dark hover:text-gray transition-colors duration-300" style="font-size: 1.5rem; line-height: 1; font-weight: 500;" aria-label="View {{title}}">
                                     →
                                 </a>
                             </div>
-                            <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.8; letter-spacing: 0.005em;">
+                            <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.5; letter-spacing: 0.005em;">
                                 {{summary}}
                             </div>
                         </div>
                     {{/if}}
                 </article>
             {{/collection:projects}}
+            </div>
         </div>
     </div>
 </div>

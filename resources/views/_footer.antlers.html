@@ -16,7 +16,7 @@
                         </div>
                     </a>
                     {{ /posts }}
-                {{ /collection:previous }}
+                 {{ /collection:previous }}
             </div>
             
             <!-- Index / Current Project -->
@@ -34,7 +34,7 @@
             <!-- Next -->
             <div class="text-right">
                 {{ collection:next in="projects" coming_soon:is="false" as="posts" limit="1" }}
-                    {{ posts }}
+                        {{ posts }}
                     <a href="{{url}}" class="group block">
                         <div class="text-gray-dark mb-3 group-hover:text-dark transition-colors" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;">
                             NEXT →
@@ -42,8 +42,8 @@
                         <div class="text-dark group-hover:text-gray transition-colors" style="font-size: 1.125rem; font-weight: 400;">
                             {{title}}
                         </div>
-                    </a>
-                    {{ /posts }}
+                        </a>
+                        {{ /posts }}
                 {{ /collection:next }}
             </div>
         </nav>
