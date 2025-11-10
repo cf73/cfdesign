@@ -53,7 +53,7 @@ export default {
                 'gray-light': '#8a8a8a',
                 'gray-dark': '#3a3a3a',
                 'border': '#b8b0ad', // Slightly darker than background
-                'background': '#f1f6f6', // Cool off-white background
+                'background': '#ffffff', // Clean white background
                 'surface': '#e8e3e0', // Lighter variant for cards/sections
                 'surface-dark': '#c4bdb9', // Darker variant for hero
                 'norwegian-fjord': '#e3edf4',
