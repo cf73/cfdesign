@@ -5,7 +5,7 @@
         <nav class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
             <!-- Previous -->
             <div>
-                {{ collection:previous in="projects" coming_soon:is="false" as="posts" limit="1" }}
+                {{ collection:previous in="projects" coming_soon:is="false" nda_protected:is="false" as="posts" limit="1" }}
                     {{ posts }}
                     <a href="{{url}}" class="group block">
                         <div class="text-gray-dark mb-3 group-hover:text-dark transition-colors" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;">
@@ -33,7 +33,7 @@
             
             <!-- Next -->
             <div class="text-right">
-                {{ collection:next in="projects" coming_soon:is="false" as="posts" limit="1" }}
+                {{ collection:next in="projects" coming_soon:is="false" nda_protected:is="false" as="posts" limit="1" }}
                         {{ posts }}
                     <a href="{{url}}" class="group block">
                         <div class="text-gray-dark mb-3 group-hover:text-dark transition-colors" style="font-size: 0.8125rem; letter-spacing: 0.08em; font-weight: 500;">

@@ -5,7 +5,7 @@
         <nav class="grid grid-cols-3 gap-8 items-center">
             <!-- Previous -->
             <div class="text-left">
-                {{ collection:previous in="projects" coming_soon:is="false" as="posts" limit="1" }}
+                {{ collection:previous in="projects" coming_soon:is="false" nda_protected:is="false" as="posts" limit="1" }}
                     {{ posts }}
                     <a href="{{url}}" class="block text-dark hover:text-gray transition-colors" style="font-size: 1.5rem; line-height: 1;">
                         ←
@@ -23,7 +23,7 @@
             
             <!-- Next -->
             <div class="text-right">
-                {{ collection:next in="projects" coming_soon:is="false" as="posts" limit="1" }}
+                {{ collection:next in="projects" coming_soon:is="false" nda_protected:is="false" as="posts" limit="1" }}
                     {{ posts }}
                     <a href="{{url}}" class="block text-dark hover:text-gray transition-colors" style="font-size: 1.5rem; line-height: 1;">
                         →
