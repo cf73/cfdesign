@@ -168,6 +168,11 @@ tabs:
               type: toggle
               display: 'Coming Soon'
           -
+            handle: nda_protected
+            field:
+              type: toggle
+              display: 'NDA Protected'
+          -
             handle: tags
             field:
               type: terms

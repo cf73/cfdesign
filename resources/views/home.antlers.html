@@ -35,6 +35,22 @@
                                 {{summary}}
                             </div>
                         </div>
+                    {{elseif nda_protected}}
+                        <div class="relative transition-transform duration-500 ease-out group-hover:scale-[1.02]">
+                            <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto"  loading="lazy">
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-dark" style="font-size: 2.5rem; font-weight: 400; line-height: 1.15;">{{title}}</h3>
+                                    <span class="text-gray/50" style="font-size: 1.5rem; line-height: 1;" aria-hidden="true">→</span>
+                                </div>
+                                <span class="text-gray text-xs px-2.5 py-1.5 border border-gray/50 rounded-md mono" style="font-weight: 500;">NDA PROTECTED</span>
+                            </div>
+                            <div class="text-gray max-w-3xl" style="font-size: 1.0625rem; line-height: 1.5; letter-spacing: 0.005em;">
+                                {{summary}}
+                            </div>
+                        </div>
                     {{else}}
                         <a href="{{url}}" class="block relative transition-transform duration-500 ease-out group-hover:scale-[1.02] cursor-pointer">
                             <img src="{{ glide:main_image width='2400' quality='90' format='webp' sharpen='10' }}" alt="{{title}}" class="w-full h-auto"  loading="lazy">
