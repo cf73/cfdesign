@@ -5,7 +5,7 @@ title: 'Amazon Health'
 coming_soon: false
 nda_protected: true
 updated_by: e8d38b19-bde9-4962-b28e-344068bc855b
-updated_at: 1763539845
+updated_at: 1763540120
 main_image: amazon-health-logo.png
 summary:
   -
@@ -22,7 +22,7 @@ summary:
         text: 'Amazon Health'
       -
         type: text
-        text: ', I contributed to strategic healthcare initiatives, designing experiences that simplify complex health services for millions of users. I also created innovative internal tooling and led vision work shaping the future of the health benefits platform.'
+        text: ', I contributed to strategic healthcare initiatives, designing experiences that simplify complex health services for millions of users. I also created innovative internal tooling using AI, and led vision work shaping the future of the health benefits platform.'
 role: 'Product Designer'
 team: Amazon
 tags:
