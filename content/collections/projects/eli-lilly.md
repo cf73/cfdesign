@@ -22,7 +22,7 @@ summary:
         text: 'Eli Lilly'
       -
         type: text
-        text: ', I am the product design lead on the Scientific eAuthoring initiative, designing innovative semantic UX/UI surfaces that leverage graph-based agentic orchestration to accelerate medical research and regulatory reporting.'
+        text: ', I am the product design lead on the Scientific eAuthoring initiative, creating innovative semantic UX/UI surfaces that leverage graph-based agentic orchestration to accelerate medical research and regulatory reporting.'
 role: 'Product Design Lead'
 team: 'Eli Lilly'
 tags:
