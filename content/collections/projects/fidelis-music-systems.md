@@ -19,7 +19,7 @@ summary:
         text: Fidelis
       -
         type: text
-        text: " is America's #1 importer and distributor of high-end audio equipment. Using agents from Anthropic and OpenAI in Cursor, I 'vibe-coded' a redesign and rebuild of their customer-facing site, reconceived as a responsive React app. Custom in-app CMS, enhanced sort and filter functionality, improved UX/UI, use of animation, and 100/100 SEO scores."
+        text: " is America's #1 importer and distributor of high-end audio equipment. Using agents from Anthropic and OpenAI in Cursor, I 'vibe-coded' a redesign and rebuild of their customer-facing site, reconceived as a responsive NextJS app. Custom in-app CMS, dynamic cross-sell based on intelligent LLM inventory matching, enhanced sort and filter functionality, improved UX/UI, use of animation, and 100/100 SEO scores."
 role: 'Design and Build using AI'
 team: Freelance
 tags:
