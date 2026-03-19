@@ -149,20 +149,20 @@ content_area:
         content:
           -
             type: text
-            text: 'While this remains a work in progress, the live demo version of it can be seen here: '
+            text: 'The live can be seen here: '
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'https://fidelis-react.vercel.app/'
+                  href: 'https://fidelisav.com/'
                   rel: null
                   target: _blank
                   title: null
               -
                 type: bold
-            text: 'https://fidelis-react.vercel.app/'
+            text: 'https://fidelisav.com/'
     type: text
     enabled: true
 ---
